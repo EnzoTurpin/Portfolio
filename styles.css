@@ -65,10 +65,8 @@ nav ul li a {
   display: flex;
   align-items: center;
   padding: 5px 10px;
-  border: 1px solid #ddd;
   border-radius: 5px;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.8);
 }
 
 #selectedLanguage img {
@@ -78,13 +76,11 @@ nav ul li a {
 }
 
 #languageList {
-  color: #333;
+  color: #fff;
   list-style: none;
   margin: 0;
   padding: 0;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  background: #fff;
   position: absolute;
   top: 100%;
   left: 0;
@@ -105,6 +101,7 @@ nav ul li a {
 
 #languageList li:hover {
   background: #f0f0f0;
+  color: #333;
 }
 
 #languageList li img {
