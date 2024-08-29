@@ -1,6 +1,7 @@
 {
   "fr": {
     "nav": {
+      "title": "Mon Portfolio",
       "about": "À propos",
       "projects": "Projets",
       "skills": "Compétences",
@@ -52,7 +53,7 @@
       },
       "golang": {
         "name": "Golang",
-        "description": "Conception de services backend performants avec Golang."
+        "description": "Conception de services backend performants et intégration d'API avec Golang."
       },
       "python": {
         "name": "Python",
@@ -106,6 +107,7 @@
   },
   "en": {
     "nav": {
+      "title": "My Portfolio",
       "about": "About",
       "projects": "Projects",
       "skills": "Skills",
@@ -157,7 +159,7 @@
       },
       "golang": {
         "name": "Golang",
-        "description": "Designing efficient backend services with Golang."
+        "description": "Design of high-performance backend services and API integration with Golang."
       },
       "python": {
         "name": "Python",
@@ -211,6 +213,7 @@
   },
   "es": {
     "nav": {
+      "title": "Mi portafolio",
       "about": "Sobre mí",
       "projects": "Proyectos",
       "skills": "Habilidades",
@@ -262,7 +265,7 @@
       },
       "golang": {
         "name": "Golang",
-        "description": "Diseño de servicios backend eficientes con Golang."
+        "description": "Diseño de servicios backend de alto rendimiento e integración de API con Golang."
       },
       "python": {
         "name": "Python",

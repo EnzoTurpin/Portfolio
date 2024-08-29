@@ -433,6 +433,7 @@ form textarea {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  resize: none;
 }
 
 form button {
@@ -459,4 +460,30 @@ form button:hover {
   color: #333;
   text-decoration: none;
   font-size: 1.2em;
+}
+
+/* Bouton de retour en haut */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: none; /* Caché par défaut */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
 }
