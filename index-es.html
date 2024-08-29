@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header class="parallax-header">
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#education">Educación</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="custom-language-selector">
+        <div id="selectedLanguage" onclick="toggleLanguageList()">
+          <img src="flags/flag_es.svg" alt="Spanish Flag" id="currentFlag" />
+          <span>ES</span>
+        </div>
+        <ul id="languageList" class="hidden">
+          <li
+            onclick="changeLanguage('index-fr.html', 'flags/flag_fr.svg', 'FR')"
+          >
+            <img src="flags/flag_fr.svg" alt="French Flag" /> FR
+          </li>
+          <li
+            onclick="changeLanguage('index-en.html', 'flags/flag_uk.svg', 'EN')"
+          >
+            <img src="flags/flag_uk.svg" alt="UK Flag" /> EN
+          </li>
+          <li
+            onclick="changeLanguage('index-es.html', 'flags/flag_es.svg', 'ES')"
+          >
+            <img src="flags/flag_es.svg" alt="Spanish Flag" /> ES
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-content">
+        <div class="header-info">
+          <img src="icon.png" alt="Foto de Enzo Turpin" class="profile-img" />
+          <div class="text-info">
+            <h1>Enzo Turpin</h1>
+            <h2>
+              Desarrollador web <br />
+              Full Stack Junior
+            </h2>
+            <p>Estudiante de segundo año de Bachelor en Informática</p>
+            <p>Buscando una pasantía en desarrollo web</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy un estudiante de segundo año de informática en Ynov Campus,
+        especializado en desarrollo web, una pasión que exploro a través de
+        diversos proyectos académicos y personales. A lo largo de mi recorrido,
+        he adquirido sólidas habilidades en HTML, CSS, JavaScript, así como en
+        back-end con tecnologías como PHP, Golang y Python. También domino el
+        uso de bases de datos, ya sea SQL o SQLite, y sé manejar APIs para
+        integrar y manipular datos de manera eficaz. Estoy buscando una pasantía
+        que me permita poner en práctica mis conocimientos, enfrentar desafíos
+        técnicos y contribuir a proyectos concretos. Motivado, curioso y siempre
+        atento a las últimas tendencias tecnológicas, estoy listo para
+        comprometerme plenamente en un equipo dinámico.
+      </p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="parallax-section">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project">
+          <img src="ContactManager.png" alt="Proyecto 1" />
+          <div class="project-title">ContactManager</div>
+          <a
+            href="https://github.com/EnzoTurpin/ContactManager"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project">
+          <img src="Quiz.png" alt="Proyecto 2" />
+          <div class="project-title">EasterQuiz</div>
+          <a
+            href="https://github.com/EnzoTurpin/EasterQuiz"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project">
+          <img src="Forum.png" alt="Proyecto 3" />
+          <div class="project-title">Forum</div>
+          <a
+            href="https://github.com/EnzoTurpin/Forum"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project">
+          <img src="Gaming.png" alt="Proyecto 4" />
+          <div class="project-title">Gaming</div>
+          <a
+            href="https://github.com/EnzoTurpin/Gaming"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="project">
+          <img src="GroupieTracker.png" alt="Proyecto 5" />
+          <div class="project-title">GroupieTracker</div>
+          <a
+            href="https://github.com/EnzoTurpin/GROUPIE-TRACKER"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="project">
+          <img src="Jeux-Video.png" alt="Proyecto 6" />
+          <div class="project-title">Videojuegos</div>
+          <a
+            href="https://github.com/EnzoTurpin/Jeux-video"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Proyecto 7 -->
+        <div class="project">
+          <img src="Mini-Jeux.png" alt="Proyecto 7" />
+          <div class="project-title">Mini-Juegos</div>
+          <a
+            href="https://github.com/EnzoTurpin/Mini-jeux"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Proyecto 8 -->
+        <div class="project">
+          <img src="TaskManager.png" alt="Proyecto 8" />
+          <div class="project-title">TaskManager</div>
+          <a
+            href="https://github.com/EnzoTurpin/TASKMANAGER"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+
+        <!-- Proyecto 9 -->
+        <div class="project">
+          <img src="TransMusicales.png" alt="Proyecto 9" />
+          <div class="project-title">TransMusicales</div>
+          <a
+            href="https://github.com/EnzoTurpin/TransMusicales"
+            class="github-button"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills">
+      <h2>Habilidades</h2>
+
+      <!-- Habilidades Front-end -->
+      <div class="skill-category">
+        <h3>Front-end</h3>
+        <div class="skills-grid">
+          <div class="skill">
+            <img src="html5.png" alt="HTML" />
+            <h4>HTML</h4>
+            <p>Dominio de la estructura de páginas web con HTML5.</p>
+          </div>
+          <div class="skill">
+            <img src="css3.png" alt="CSS" />
+            <h4>CSS</h4>
+            <p>Estilización de páginas web con CSS3, Flexbox y Grid.</p>
+          </div>
+          <div class="skill">
+            <img src="javascript.png" alt="JavaScript" />
+            <h4>JavaScript</h4>
+            <p>
+              Creación de interfaces de usuario interactivas con JavaScript.
+            </p>
+          </div>
+        </div>
+
+        <!-- Habilidades Back-end -->
+        <div class="skill-category">
+          <h3>Back-end</h3>
+          <div class="skills-grid">
+            <div class="skill">
+              <img src="PHP.png" alt="PHP" />
+              <h4>PHP</h4>
+              <p>Desarrollo de aplicaciones web dinámicas con PHP.</p>
+            </div>
+            <div class="skill">
+              <img src="GOLANG.png" alt="Golang" />
+              <h4>Golang</h4>
+              <p>Diseño de servicios backend eficientes con Golang.</p>
+            </div>
+            <div class="skill">
+              <img src="python.png" alt="Python" />
+              <h4>Python</h4>
+              <p>Automatización, ciencia de datos y back-end con Python.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Habilidades Bases de datos -->
+        <div class="skill-category">
+          <h3>Bases de datos</h3>
+          <div class="skills-grid">
+            <div class="skill">
+              <img src="SQLite.png" alt="SQLite" />
+              <h4>SQLite</h4>
+              <p>Gestión de bases de datos ligeras con SQLite.</p>
+            </div>
+            <div class="skill">
+              <img src="MySQL.png" alt="MySQL" />
+              <h4>MySQL</h4>
+              <p>Gestión de bases de datos relacionales con MySQL.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Educación -->
+    <section id="education" class="parallax-section">
+      <h2>Educación</h2>
+
+      <div class="education-item">
+        <h3>Ynov Campus</h3>
+        <p class="education-degree">Bachelor - Informática</p>
+        <p class="education-dates">2023 - 2027</p>
+      </div>
+
+      <div class="education-item">
+        <h3>MediaSchool - SupDeWeb</h3>
+        <p class="education-degree">Bachelor - Desarrollo Web</p>
+        <p class="education-dates">2022 - 2023</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Epitech</h3>
+        <p class="education-degree">
+          Experto en gestión de sistemas de información
+        </p>
+        <p class="education-dates">2022 - 2022</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Lycée Louis Guilloux</h3>
+        <p class="education-degree">
+          Bachillerato Profesional en Comercio<br />
+        </p>
+        <p class="education-dates">2019 - 2022</p>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact">
+      <h2>Contáctame</h2>
+      <form
+        action="mailto:tu-correo@example.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/tu-perfil">LinkedIn</a>
+        <a href="https://github.com/tu-perfil">GitHub</a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
