@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio</title>
+    <title class="translate" data-key="title">Mon Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,11 +11,29 @@
     <header class="parallax-header">
       <nav>
         <ul>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#education">Éducation</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#about" class="translate" data-key="nav.about">À propos</a>
+          </li>
+          <li>
+            <a href="#projects" class="translate" data-key="nav.projects"
+              >Projets</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="translate" data-key="nav.skills"
+              >Compétences</a
+            >
+          </li>
+          <li>
+            <a href="#education" class="translate" data-key="nav.education"
+              >Éducation</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="translate" data-key="nav.contact"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
 
@@ -25,19 +43,13 @@
           <span>FR</span>
         </div>
         <ul id="languageList" class="hidden">
-          <li
-            onclick="changeLanguage('index-fr.html', 'flags/flag_fr.svg', 'FR')"
-          >
+          <li onclick="changeLanguage('fr')">
             <img src="flags/flag_fr.svg" alt="French Flag" /> FR
           </li>
-          <li
-            onclick="changeLanguage('index-en.html', 'flags/flag_uk.svg', 'EN')"
-          >
-            <img src="flags/flag_uk.svg" alt="UK Flag" /> EN
+          <li onclick="changeLanguage('en')">
+            <img src="flags/flag_en.svg" alt="UK Flag" /> EN
           </li>
-          <li
-            onclick="changeLanguage('index-es.html', 'flags/flag_es.svg', 'ES')"
-          >
+          <li onclick="changeLanguage('es')">
             <img src="flags/flag_es.svg" alt="Spanish Flag" /> ES
           </li>
         </ul>
@@ -45,15 +57,23 @@
 
       <div class="header-content">
         <div class="header-info">
-          <img src="icon.png" alt="Photo de Enzo Turpin" class="profile-img" />
+          <img
+            src="img/icon.png"
+            alt="Photo de Enzo Turpin"
+            class="profile-img"
+          />
           <div class="text-info">
-            <h1>Enzo Turpin</h1>
-            <h2>
+            <h1 class="translate" data-key="header.name">Enzo Turpin</h1>
+            <h2 class="translate" data-key="header.role">
               Développeur web <br />
               Full Stack Junior
             </h2>
-            <p>Étudiant en 2ème année de Bachelor Informatique</p>
-            <p>À la recherche d'un stage dans le développement web</p>
+            <p class="translate" data-key="header.description1">
+              Étudiant en 2ème année de Bachelor Informatique
+            </p>
+            <p class="translate" data-key="header.description2">
+              À la recherche d'un stage dans le développement web
+            </p>
           </div>
         </div>
       </div>
@@ -61,8 +81,8 @@
 
     <!-- Section À propos -->
     <section id="about">
-      <h2>À propos de moi</h2>
-      <p>
+      <h2 class="translate" data-key="about.title">À propos de moi</h2>
+      <p class="translate" data-key="about.content">
         Étudiant en deuxième année d'informatique à Ynov Campus, je me
         spécialise dans le développement web, une passion que j'explore à
         travers divers projets académiques et personnels. Au fil de mon
@@ -80,12 +100,14 @@
 
     <!-- Section Projets -->
     <section id="projects" class="parallax-section">
-      <h2>Projets</h2>
+      <h2 class="translate" data-key="projects.title">Projets</h2>
       <div class="projects-grid">
         <!-- Projet 1 -->
         <div class="project">
-          <img src="ContactManager.png" alt="Projet 1" />
-          <div class="project-title">ContactManager</div>
+          <img src="img/ContactManager.png" alt="Projet 1" />
+          <div class="project-title translate" data-key="projects.project1">
+            ContactManager
+          </div>
           <a
             href="https://github.com/EnzoTurpin/ContactManager"
             class="github-button"
@@ -96,8 +118,10 @@
 
         <!-- Projet 2 -->
         <div class="project">
-          <img src="Quiz.png" alt="Projet 2" />
-          <div class="project-title">EasterQuiz</div>
+          <img src="img/Quiz.png" alt="Projet 2" />
+          <div class="project-title translate" data-key="projects.project2">
+            EasterQuiz
+          </div>
           <a
             href="https://github.com/EnzoTurpin/EasterQuiz"
             class="github-button"
@@ -108,8 +132,10 @@
 
         <!-- Projet 3 -->
         <div class="project">
-          <img src="Forum.png" alt="Projet 3" />
-          <div class="project-title">Forum</div>
+          <img src="img/Forum.png" alt="Projet 3" />
+          <div class="project-title translate" data-key="projects.project3">
+            Forum
+          </div>
           <a
             href="https://github.com/EnzoTurpin/Forum"
             class="github-button"
@@ -120,8 +146,10 @@
 
         <!-- Projet 4 -->
         <div class="project">
-          <img src="Gaming.png" alt="Projet 4" />
-          <div class="project-title">Gaming</div>
+          <img src="img/Gaming.png" alt="Projet 4" />
+          <div class="project-title translate" data-key="projects.project4">
+            Gaming
+          </div>
           <a
             href="https://github.com/EnzoTurpin/Gaming"
             class="github-button"
@@ -132,8 +160,10 @@
 
         <!-- Projet 5 -->
         <div class="project">
-          <img src="GroupieTracker.png" alt="Projet 5" />
-          <div class="project-title">GroupieTracker</div>
+          <img src="img/GroupieTracker.png" alt="Projet 5" />
+          <div class="project-title translate" data-key="projects.project5">
+            GroupieTracker
+          </div>
           <a
             href="https://github.com/EnzoTurpin/GROUPIE-TRACKER"
             class="github-button"
@@ -144,8 +174,10 @@
 
         <!-- Projet 6 -->
         <div class="project">
-          <img src="Jeux-Video.png" alt="Projet 6" />
-          <div class="project-title">Jeux-video</div>
+          <img src="img/Jeux-Video.png" alt="Projet 6" />
+          <div class="project-title translate" data-key="projects.project6">
+            Jeux-video
+          </div>
           <a
             href="https://github.com/EnzoTurpin/Jeux-video"
             class="github-button"
@@ -156,8 +188,10 @@
 
         <!-- Projet 7 -->
         <div class="project">
-          <img src="Mini-Jeux.png" alt="Projet 7" />
-          <div class="project-title">Mini-Jeux</div>
+          <img src="img/Mini-Jeux.png" alt="Projet 7" />
+          <div class="project-title translate" data-key="projects.project7">
+            Mini-Jeux
+          </div>
           <a
             href="https://github.com/EnzoTurpin/Mini-jeux"
             class="github-button"
@@ -168,8 +202,10 @@
 
         <!-- Projet 8 -->
         <div class="project">
-          <img src="TaskManager.png" alt="Projet 8" />
-          <div class="project-title">TaskManager</div>
+          <img src="img/TaskManager.png" alt="Projet 8" />
+          <div class="project-title translate" data-key="projects.project8">
+            TaskManager
+          </div>
           <a
             href="https://github.com/EnzoTurpin/TASKMANAGER"
             class="github-button"
@@ -180,8 +216,10 @@
 
         <!-- Projet 9 -->
         <div class="project">
-          <img src="TransMusicales.png" alt="Projet 9" />
-          <div class="project-title">TransMusicales</div>
+          <img src="img/TransMusicales.png" alt="Projet 9" />
+          <div class="project-title translate" data-key="projects.project9">
+            TransMusicales
+          </div>
           <a
             href="https://github.com/EnzoTurpin/TransMusicales"
             class="github-button"
@@ -194,26 +232,32 @@
 
     <!-- Section Compétences -->
     <section id="skills">
-      <h2>Compétences</h2>
+      <h2 class="translate" data-key="skills.title">Compétences</h2>
 
       <!-- Compétences Front-end -->
       <div class="skill-category">
-        <h3>Front-end</h3>
+        <h3 class="translate" data-key="skills.frontend">Front-end</h3>
         <div class="skills-grid">
           <div class="skill">
-            <img src="html5.png" alt="HTML" />
-            <h4>HTML</h4>
-            <p>Maîtrise de la structure des pages web avec HTML5.</p>
+            <img src="img/html5.png" alt="HTML" />
+            <h4 class="translate" data-key="skills.html.name">HTML</h4>
+            <p class="translate" data-key="skills.html.description">
+              Maîtrise de la structure des pages web avec HTML5.
+            </p>
           </div>
           <div class="skill">
-            <img src="css3.png" alt="CSS" />
-            <h4>CSS</h4>
-            <p>Stylisation des pages web avec CSS3, Flexbox, et Grid.</p>
+            <img src="img/css3.png" alt="CSS" />
+            <h4 class="translate" data-key="skills.css.name">CSS</h4>
+            <p class="translate" data-key="skills.css.description">
+              Stylisation des pages web avec CSS3, Flexbox, et Grid.
+            </p>
           </div>
           <div class="skill">
-            <img src="javascript.png" alt="JavaScript" />
-            <h4>JavaScript</h4>
-            <p>
+            <img src="img/javascript.png" alt="JavaScript" />
+            <h4 class="translate" data-key="skills.javascript.name">
+              JavaScript
+            </h4>
+            <p class="translate" data-key="skills.javascript.description">
               Création d'interfaces utilisateur interactives avec JavaScript.
             </p>
           </div>
@@ -221,39 +265,51 @@
 
         <!-- Compétences Back-end -->
         <div class="skill-category">
-          <h3>Back-end</h3>
+          <h3 class="translate" data-key="skills.backend">Back-end</h3>
           <div class="skills-grid">
             <div class="skill">
-              <img src="PHP.png" alt="PHP" />
-              <h4>PHP</h4>
-              <p>Développement d'applications web dynamiques avec PHP.</p>
+              <img src="img/PHP.png" alt="PHP" />
+              <h4 class="translate" data-key="skills.php.name">PHP</h4>
+              <p class="translate" data-key="skills.php.description">
+                Développement d'applications web dynamiques avec PHP.
+              </p>
             </div>
             <div class="skill">
-              <img src="GOLANG.png" alt="Golang" />
-              <h4>Golang</h4>
-              <p>Conception de services backend performants avec Golang.</p>
+              <img src="img/GOLANG.png" alt="Golang" />
+              <h4 class="translate" data-key="skills.golang.name">Golang</h4>
+              <p class="translate" data-key="skills.golang.description">
+                Conception de services backend performants avec Golang.
+              </p>
             </div>
             <div class="skill">
-              <img src="python.png" alt="Python" />
-              <h4>Python</h4>
-              <p>Automatisation, data science et back-end avec Python.</p>
+              <img src="img/python.png" alt="Python" />
+              <h4 class="translate" data-key="skills.python.name">Python</h4>
+              <p class="translate" data-key="skills.python.description">
+                Automatisation, data science et back-end avec Python.
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Compétences Bases de données -->
         <div class="skill-category">
-          <h3>Bases de données</h3>
+          <h3 class="translate" data-key="skills.databases">
+            Bases de données
+          </h3>
           <div class="skills-grid">
             <div class="skill">
-              <img src="SQLite.png" alt="SQLite" />
-              <h4>SQLite</h4>
-              <p>Gestion de bases de données légères avec SQLite.</p>
+              <img src="img/SQLite.png" alt="SQLite" />
+              <h4 class="translate" data-key="skills.sqlite.name">SQLite</h4>
+              <p class="translate" data-key="skills.sqlite.description">
+                Gestion de bases de données légères avec SQLite.
+              </p>
             </div>
             <div class="skill">
-              <img src="MySQL.png" alt="MySQL" />
-              <h4>MySQL</h4>
-              <p>Gestion de bases de données relationnelles avec MySQL.</p>
+              <img src="img/MySQL.png" alt="MySQL" />
+              <h4 class="translate" data-key="skills.mysql.name">MySQL</h4>
+              <p class="translate" data-key="skills.mysql.description">
+                Gestion de bases de données relationnelles avec MySQL.
+              </p>
             </div>
           </div>
         </div>
@@ -262,59 +318,102 @@
 
     <!-- Section Éducation -->
     <section id="education" class="parallax-section">
-      <h2>Éducation</h2>
+      <h2 class="translate" data-key="education.title">Éducation</h2>
 
       <div class="education-item">
-        <h3>Ynov Campus</h3>
-        <p class="education-degree">Bachelor - Informatique</p>
-        <p class="education-dates">2023 - 2027</p>
+        <h3 class="translate" data-key="education.ynov.school">Ynov Campus</h3>
+        <p class="education-degree translate" data-key="education.ynov.degree">
+          Bachelor - Informatique
+        </p>
+        <p class="education-dates translate" data-key="education.ynov.dates">
+          2023 - 2027
+        </p>
       </div>
 
       <div class="education-item">
-        <h3>MediaSchool - SupDeWeb</h3>
-        <p class="education-degree">Bachelor - Développement Web</p>
-        <p class="education-dates">2022 - 2023</p>
+        <h3 class="translate" data-key="education.mediaschool.school">
+          MediaSchool - SupDeWeb
+        </h3>
+        <p
+          class="education-degree translate"
+          data-key="education.mediaschool.degree"
+        >
+          Bachelor - Développement Web
+        </p>
+        <p
+          class="education-dates translate"
+          data-key="education.mediaschool.dates"
+        >
+          2022 - 2023
+        </p>
       </div>
 
       <div class="education-item">
-        <h3>Epitech</h3>
-        <p class="education-degree">
+        <h3 class="translate" data-key="education.epitech.school">Epitech</h3>
+        <p
+          class="education-degree translate"
+          data-key="education.epitech.degree"
+        >
           Expert en management des Systèmes d’information
         </p>
-        <p class="education-dates">2022 - 2022</p>
+        <p class="education-dates translate" data-key="education.epitech.dates">
+          2022 - 2022
+        </p>
       </div>
 
       <div class="education-item">
-        <h3>Lycée Louis Guilloux</h3>
-        <p class="education-degree">
+        <h3 class="translate" data-key="education.lycee.school">
+          Lycée Louis Guilloux
+        </h3>
+        <p class="education-degree translate" data-key="education.lycee.degree">
           Baccalauréat Professionnel Commerce<br />
         </p>
-        <p class="education-dates">2019 - 2022</p>
+        <p class="education-dates translate" data-key="education.lycee.dates">
+          2019 - 2022
+        </p>
       </div>
     </section>
 
     <!-- Section Contact -->
     <section id="contact">
-      <h2>Contactez-moi</h2>
+      <h2 class="translate" data-key="contact.title">Contactez-moi</h2>
       <form
         action="mailto:votre-email@example.com"
         method="POST"
         enctype="text/plain"
       >
-        <label for="name">Nom:</label>
+        <label for="name" class="translate" data-key="contact.form.name"
+          >Nom:</label
+        >
         <input type="text" id="name" name="name" required />
 
-        <label for="email">Email:</label>
+        <label for="email" class="translate" data-key="contact.form.email"
+          >Email:</label
+        >
         <input type="email" id="email" name="email" required />
 
-        <label for="message">Message:</label>
+        <label for="message" class="translate" data-key="contact.form.message"
+          >Message:</label
+        >
         <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" class="translate" data-key="contact.form.submit">
+          Envoyer
+        </button>
       </form>
       <div class="social-links">
-        <a href="https://linkedin.com/in/votreprofil">LinkedIn</a>
-        <a href="https://github.com/votreprofil">GitHub</a>
+        <a
+          href="https://linkedin.com/in/votreprofil"
+          class="translate"
+          data-key="contact.social.linkedin"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/votreprofil"
+          class="translate"
+          data-key="contact.social.github"
+          >GitHub</a
+        >
       </div>
     </section>
     <script src="script.js"></script>

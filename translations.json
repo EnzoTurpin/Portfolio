@@ -1,0 +1,317 @@
+{
+  "fr": {
+    "nav": {
+      "about": "À propos",
+      "projects": "Projets",
+      "skills": "Compétences",
+      "education": "Éducation",
+      "contact": "Contact"
+    },
+    "header": {
+      "name": "Enzo Turpin",
+      "role": "Développeur web Full Stack Junior",
+      "description1": "Étudiant en 2ème année de Bachelor Informatique",
+      "description2": "À la recherche d'un stage dans le développement web"
+    },
+    "about": {
+      "title": "À propos de moi",
+      "content": "Étudiant en deuxième année d'informatique à Ynov Campus, je me spécialise dans le développement web, une passion que j'explore à travers divers projets académiques et personnels. Au fil de mon parcours, j'ai acquis des compétences solides en HTML, CSS, JavaScript, ainsi qu'en back-end avec des technologies comme PHP, Golang, et Python. Je maîtrise également l'utilisation des bases de données, que ce soit SQL ou SQLite, et je sais traiter les APIs pour intégrer et manipuler des données de manière efficace. Je suis à la recherche d'un stage qui me permettra de mettre en pratique mes connaissances, de relever des défis techniques, et de contribuer à des projets concrets. Motivé, curieux, et toujours à l'affût des dernières tendances technologiques, je suis prêt à m'investir pleinement dans une équipe dynamique."
+    },
+    "projects": {
+      "title": "Projets",
+      "project1": "ContactManager",
+      "project2": "EasterQuiz",
+      "project3": "Forum",
+      "project4": "Gaming",
+      "project5": "GroupieTracker",
+      "project6": "Jeux-video",
+      "project7": "Mini-Jeux",
+      "project8": "TaskManager",
+      "project9": "TransMusicales"
+    },
+    "skills": {
+      "title": "Compétences",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "databases": "Bases de données",
+      "html": {
+        "name": "HTML",
+        "description": "Maîtrise de la structure des pages web avec HTML5."
+      },
+      "css": {
+        "name": "CSS",
+        "description": "Stylisation des pages web avec CSS3, Flexbox, et Grid."
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "description": "Création d'interfaces utilisateur interactives avec JavaScript."
+      },
+      "php": {
+        "name": "PHP",
+        "description": "Développement d'applications web dynamiques avec PHP."
+      },
+      "golang": {
+        "name": "Golang",
+        "description": "Conception de services backend performants avec Golang."
+      },
+      "python": {
+        "name": "Python",
+        "description": "Automatisation, data science et back-end avec Python."
+      },
+      "sqlite": {
+        "name": "SQLite",
+        "description": "Gestion de bases de données légères avec SQLite."
+      },
+      "mysql": {
+        "name": "MySQL",
+        "description": "Gestion de bases de données relationnelles avec MySQL."
+      }
+    },
+    "education": {
+      "title": "Éducation",
+      "ynov": {
+        "school": "Ynov Campus",
+        "degree": "Bachelor - Informatique",
+        "dates": "2023 - 2027"
+      },
+      "mediaschool": {
+        "school": "MediaSchool - SupDeWeb",
+        "degree": "Bachelor - Développement Web",
+        "dates": "2022 - 2023"
+      },
+      "epitech": {
+        "school": "Epitech",
+        "degree": "Expert en management des Systèmes d’information",
+        "dates": "2022 - 2022"
+      },
+      "lycee": {
+        "school": "Lycée Louis Guilloux",
+        "degree": "Baccalauréat Professionnel Commerce",
+        "dates": "2019 - 2022"
+      }
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "form": {
+        "name": "Nom:",
+        "email": "Email:",
+        "message": "Message:",
+        "submit": "Envoyer"
+      },
+      "social": {
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+      }
+    }
+  },
+  "en": {
+    "nav": {
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "education": "Education",
+      "contact": "Contact"
+    },
+    "header": {
+      "name": "Enzo Turpin",
+      "role": "Full Stack Junior Web Developer",
+      "description1": "Second-year Bachelor student in Computer Science",
+      "description2": "Looking for an internship in web development"
+    },
+    "about": {
+      "title": "About Me",
+      "content": "Second year computer science student at Ynov Campus, I specialize in web development, a passion that I explore through various academic and personal projects. Throughout my journey, I have acquired solid skills in HTML, CSS, JavaScript, as well as back-end with technologies like PHP, Golang, and Python. I also master the use of databases, whether SQL or SQLite, and I know how to deal with APIs to integrate and manipulate data efficiently. I am looking for an internship that will allow me to put my knowledge into practice, take on technical challenges, and contribute to concrete projects. Motivated, curious, and always on the lookout for the latest technological trends, I am ready to fully invest in a dynamic team."
+    },
+    "projects": {
+      "title": "Projects",
+      "project1": "ContactManager",
+      "project2": "EasterQuiz",
+      "project3": "Forum",
+      "project4": "Gaming",
+      "project5": "GroupieTracker",
+      "project6": "Video Games",
+      "project7": "Mini-Games",
+      "project8": "TaskManager",
+      "project9": "TransMusicales"
+    },
+    "skills": {
+      "title": "Skills",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "databases": "Databases",
+      "html": {
+        "name": "HTML",
+        "description": "Mastery of web page structure with HTML5."
+      },
+      "css": {
+        "name": "CSS",
+        "description": "Styling web pages with CSS3, Flexbox, and Grid."
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "description": "Creating interactive user interfaces with JavaScript."
+      },
+      "php": {
+        "name": "PHP",
+        "description": "Developing dynamic web applications with PHP."
+      },
+      "golang": {
+        "name": "Golang",
+        "description": "Designing efficient backend services with Golang."
+      },
+      "python": {
+        "name": "Python",
+        "description": "Automation, data science, and backend with Python."
+      },
+      "sqlite": {
+        "name": "SQLite",
+        "description": "Managing lightweight databases with SQLite."
+      },
+      "mysql": {
+        "name": "MySQL",
+        "description": "Managing relational databases with MySQL."
+      }
+    },
+    "education": {
+      "title": "Education",
+      "ynov": {
+        "school": "Ynov Campus",
+        "degree": "Bachelor - Computer Science",
+        "dates": "2023 - 2027"
+      },
+      "mediaschool": {
+        "school": "MediaSchool - SupDeWeb",
+        "degree": "Bachelor - Web Development",
+        "dates": "2022 - 2023"
+      },
+      "epitech": {
+        "school": "Epitech",
+        "degree": "Expert in Information Systems Management",
+        "dates": "2022 - 2022"
+      },
+      "lycee": {
+        "school": "Lycée Louis Guilloux",
+        "degree": "Professional Baccalaureate in Commerce",
+        "dates": "2019 - 2022"
+      }
+    },
+    "contact": {
+      "title": "Contact Me",
+      "form": {
+        "name": "Name:",
+        "email": "Email:",
+        "message": "Message:",
+        "submit": "Send"
+      },
+      "social": {
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+      }
+    }
+  },
+  "es": {
+    "nav": {
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "education": "Educación",
+      "contact": "Contacto"
+    },
+    "header": {
+      "name": "Enzo Turpin",
+      "role": "Desarrollador web Full Stack Junior",
+      "description1": "Estudiante de segundo año de licenciatura en informática",
+      "description2": "Buscando una pasantía en desarrollo web"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "content": "Estudiante de segundo año de informática en Ynov Campus, me especializo en desarrollo web, pasión que exploro a través de diversos proyectos académicos y personales. A lo largo de mi trayectoria, he adquirido sólidas habilidades en HTML, CSS, JavaScript, así como back-end con tecnologías como PHP, Golang y Python. También domino el uso de bases de datos, ya sean SQL o SQLite, y sé manejar API para integrar y manipular datos de manera eficiente. Busco una pasantía que me permita poner en práctica mis conocimientos, asumir desafíos técnicos y contribuir a proyectos concretos. Motivado, curioso y siempre atento a las últimas tendencias tecnológicas, estoy dispuesto a invertir de lleno en un equipo dinámico."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "project1": "ContactManager",
+      "project2": "EasterQuiz",
+      "project3": "Foro",
+      "project4": "Juegos",
+      "project5": "GroupieTracker",
+      "project6": "Videojuegos",
+      "project7": "Mini-Juegos",
+      "project8": "TaskManager",
+      "project9": "TransMusicales"
+    },
+    "skills": {
+      "title": "Habilidades",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "databases": "Bases de datos",
+      "html": {
+        "name": "HTML",
+        "description": "Dominio de la estructura de las páginas web con HTML5."
+      },
+      "css": {
+        "name": "CSS",
+        "description": "Estilización de páginas web con CSS3, Flexbox y Grid."
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "description": "Creación de interfaces de usuario interactivas con JavaScript."
+      },
+      "php": {
+        "name": "PHP",
+        "description": "Desarrollo de aplicaciones web dinámicas con PHP."
+      },
+      "golang": {
+        "name": "Golang",
+        "description": "Diseño de servicios backend eficientes con Golang."
+      },
+      "python": {
+        "name": "Python",
+        "description": "Automatización, ciencia de datos y backend con Python."
+      },
+      "sqlite": {
+        "name": "SQLite",
+        "description": "Gestión de bases de datos ligeras con SQLite."
+      },
+      "mysql": {
+        "name": "MySQL",
+        "description": "Gestión de bases de datos relacionales con MySQL."
+      }
+    },
+    "education": {
+      "title": "Educación",
+      "ynov": {
+        "school": "Ynov Campus",
+        "degree": "Licenciatura - Informática",
+        "dates": "2023 - 2027"
+      },
+      "mediaschool": {
+        "school": "MediaSchool - SupDeWeb",
+        "degree": "Licenciatura - Desarrollo Web",
+        "dates": "2022 - 2023"
+      },
+      "epitech": {
+        "school": "Epitech",
+        "degree": "Experto en gestión de sistemas de información",
+        "dates": "2022 - 2022"
+      },
+      "lycee": {
+        "school": "Lycée Louis Guilloux",
+        "degree": "Bachillerato Profesional en Comercio",
+        "dates": "2019 - 2022"
+      }
+    },
+    "contact": {
+      "title": "Contáctame",
+      "form": {
+        "name": "Nombre:",
+        "email": "Correo electrónico:",
+        "message": "Mensaje:",
+        "submit": "Enviar"
+      },
+      "social": {
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
+      }
+    }
+  }
+}

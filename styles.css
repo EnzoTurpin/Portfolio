@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 .parallax-header {
-  background-image: url("background.jpg");
+  background-image: url("img/background.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;

@@ -8,68 +8,69 @@ document.querySelectorAll("nav ul li a").forEach((anchor) => {
   });
 });
 
-// Dictionnaire des options pour les langues
-const languageOptions = {
-  "index-fr.html": { flag: "flags/flag_fr.svg", code: "FR" },
-  "index-en.html": { flag: "flags/flag_uk.svg", code: "EN" },
-  "index-es.html": { flag: "flags/flag_es.svg", code: "ES" },
-};
+let translations = {};
 
-// Fonction pour basculer l'affichage de la liste des langues
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("translations.json")
+    .then((response) => response.json())
+    .then((data) => {
+      translations = data;
+      const savedLang = localStorage.getItem("language") || "fr";
+      setLanguage(savedLang);
+    });
+});
+
+function setLanguage(lang) {
+  localStorage.setItem("language", lang);
+  document.getElementById("currentFlag").src = `flags/flag_${lang}.svg`;
+  document
+    .getElementById("selectedLanguage")
+    .querySelector("span").textContent = lang.toUpperCase();
+
+  // Met à jour la liste des langues pour exclure celle qui est actuellement sélectionnée
+  updateLanguageList(lang);
+
+  document.querySelectorAll(".translate").forEach((element) => {
+    const key = element.getAttribute("data-key");
+    const text = getNestedTranslation(translations, lang, key);
+    if (text) element.textContent = text;
+  });
+}
+
+function getNestedTranslation(translations, lang, key) {
+  return key
+    .split(".")
+    .reduce((obj, keyPart) => obj?.[keyPart], translations[lang]);
+}
+
+function changeLanguage(lang) {
+  setLanguage(lang);
+  toggleLanguageList();
+}
+
 function toggleLanguageList() {
   const languageList = document.getElementById("languageList");
   languageList.classList.toggle("visible");
 }
 
-// Fonction pour changer la langue et mettre à jour la liste des options
-function changeLanguage(page, flag, code) {
-  // Mettre à jour l'affichage du drapeau et du code de langue
-  document.getElementById("currentFlag").src = flag;
-  document
-    .getElementById("selectedLanguage")
-    .querySelector("span").textContent = code;
+// Met à jour la liste des langues disponibles dans le menu
+function updateLanguageList(selectedLang) {
+  const languages = {
+    fr: { flag: "flags/flag_fr.svg", code: "FR" },
+    en: { flag: "flags/flag_en.svg", code: "EN" },
+    es: { flag: "flags/flag_es.svg", code: "ES" },
+  };
 
-  // Sauvegarder la langue sélectionnée dans le localStorage
-  localStorage.setItem("languagePage", page);
-
-  // Mettre à jour la liste des langues en masquant la langue sélectionnée
-  updateLanguageList(page);
-
-  // Fermer le menu après la sélection
-  toggleLanguageList();
-
-  // Rediriger vers la page correspondante
-  window.location.href = page;
-}
-
-// Fonction pour mettre à jour la liste des langues disponibles
-function updateLanguageList(selectedPage) {
   const languageList = document.getElementById("languageList");
-  languageList.innerHTML = ""; // Vider la liste actuelle
+  languageList.innerHTML = ""; // Réinitialise la liste
 
-  // Ajouter chaque langue sauf celle sélectionnée
-  for (const [page, { flag, code }] of Object.entries(languageOptions)) {
-    if (page !== selectedPage) {
+  // Parcours toutes les langues et ajoute celles qui ne sont pas sélectionnées
+  for (const [lang, { flag, code }] of Object.entries(languages)) {
+    if (lang !== selectedLang) {
       const li = document.createElement("li");
-      li.onclick = () => changeLanguage(page, flag, code);
+      li.onclick = () => changeLanguage(lang);
       li.innerHTML = `<img src="${flag}" alt="${code} Flag" /> ${code}`;
       languageList.appendChild(li);
     }
   }
 }
-
-// Charger la langue sauvegardée au chargement de la page pour maintenir la sélection précédente
-document.addEventListener("DOMContentLoaded", () => {
-  const savedPage = localStorage.getItem("languagePage") || "index-fr.html"; // FR par défaut
-  const { flag, code } =
-    languageOptions[savedPage] || languageOptions["index-fr.html"];
-
-  // Mettre à jour l'affichage initial
-  document.getElementById("currentFlag").src = flag;
-  document
-    .getElementById("selectedLanguage")
-    .querySelector("span").textContent = code;
-
-  // Mettre à jour la liste pour masquer la langue sélectionnée
-  updateLanguageList(savedPage);
-});
