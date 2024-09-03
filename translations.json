@@ -20,15 +20,46 @@
     },
     "projects": {
       "title": "Projets",
-      "project1": "ContactManager",
-      "project2": "EasterQuiz",
-      "project3": "Forum",
-      "project4": "Gaming",
-      "project5": "GroupieTracker",
-      "project6": "Jeux-video",
-      "project7": "Mini-Jeux",
-      "project8": "TaskManager",
-      "project9": "TransMusicales"
+      "project1": {
+        "title": "ContactManager",
+        "description": "Un gestionnaire de contacts intuitif pour organiser vos relations."
+      },
+      "project2": {
+        "title": "EasterQuiz",
+        "description": "Quiz amusant sur les traditions de Pâques à travers le monde."
+      },
+      "project3": {
+        "title": "Forum",
+        "description": "Une plateforme de discussion pour les passionnés de jeux vidéo."
+      },
+      "project4": {
+        "title": "Gaming",
+        "description": "Catalogue de jeux vidéo avec avis et notes des utilisateurs."
+      },
+      "project5": {
+        "title": "GroupieTracker",
+        "description": "Une application pour suivre les tournées de vos artistes préférés."
+      },
+      "project6": {
+        "title": "Jeux-video",
+        "description": "Classement des jeux vidéo les plus populaires avec notes et critiques."
+      },
+      "project7": {
+        "title": "Mini-Jeux",
+        "description": "Collection de mini-jeux amusants pour passer le temps."
+      },
+      "project8": {
+        "title": "TaskManager",
+        "description": "Application de gestion de tâches pour améliorer votre productivité."
+      },
+      "project9": {
+        "title": "TransMusicales",
+        "description": "Application pour explorer le festival des Trans Musicales."
+      },
+      "buttons": {
+        "github": "Voir sur GitHub",
+        "view": "Voir le Projet"
+      }
     },
     "skills": {
       "title": "Compétences",
@@ -58,6 +89,10 @@
       "python": {
         "name": "Python",
         "description": "Automatisation, data science et back-end avec Python."
+      },
+      "java": {
+        "name": "Java",
+        "description": "Développement d'applications, systèmes distribués et back-end avec Java."
       },
       "sqlite": {
         "name": "SQLite",
@@ -126,15 +161,37 @@
     },
     "projects": {
       "title": "Projects",
-      "project1": "ContactManager",
-      "project2": "EasterQuiz",
-      "project3": "Forum",
-      "project4": "Gaming",
-      "project5": "GroupieTracker",
-      "project6": "Video Games",
-      "project7": "Mini-Games",
-      "project8": "TaskManager",
-      "project9": "TransMusicales"
+      "project1": {
+        "description": "An intuitive contact manager to organize your relationships."
+      },
+      "project2": {
+        "description": "Fun quiz about Easter traditions around the world."
+      },
+      "project3": {
+        "description": "A discussion platform for video game enthusiasts."
+      },
+      "project4": {
+        "description": "Video game catalog with user reviews and ratings."
+      },
+      "project5": {
+        "description": "An app to track your favorite artists' tours."
+      },
+      "project6": {
+        "description": "Ranking of the most popular video games with ratings and reviews."
+      },
+      "project7": {
+        "description": "Collection of fun mini-games to pass the time."
+      },
+      "project8": {
+        "description": "Task management app to boost your productivity."
+      },
+      "project9": {
+        "description": "App to explore the Trans Musicales festival."
+      },
+      "buttons": {
+        "github": "View on GitHub",
+        "view": "View Project"
+      }
     },
     "skills": {
       "title": "Skills",
@@ -164,6 +221,10 @@
       "python": {
         "name": "Python",
         "description": "Automation, data science, and backend with Python."
+      },
+      "java": {
+        "name": "Java",
+        "description": "Development of applications, distributed systems and back-end with Java."
       },
       "sqlite": {
         "name": "SQLite",
@@ -232,15 +293,37 @@
     },
     "projects": {
       "title": "Proyectos",
-      "project1": "ContactManager",
-      "project2": "EasterQuiz",
-      "project3": "Foro",
-      "project4": "Juegos",
-      "project5": "GroupieTracker",
-      "project6": "Videojuegos",
-      "project7": "Mini-Juegos",
-      "project8": "TaskManager",
-      "project9": "TransMusicales"
+      "project1": {
+        "description": "Un gestor de contactos intuitivo para organizar tus relaciones."
+      },
+      "project2": {
+        "description": "Quiz divertido sobre las tradiciones de Pascua en el mundo."
+      },
+      "project3": {
+        "description": "Una plataforma de discusión para entusiastas de los videojuegos."
+      },
+      "project4": {
+        "description": "Catálogo de videojuegos con reseñas y calificaciones de usuarios."
+      },
+      "project5": {
+        "description": "Una aplicación para seguir las giras de tus artistas favoritos."
+      },
+      "project6": {
+        "description": "Clasificación de los videojuegos más populares con calificaciones y reseñas."
+      },
+      "project7": {
+        "description": "Colección de mini-juegos divertidos para pasar el tiempo."
+      },
+      "project8": {
+        "description": "Aplicación de gestión de tareas para mejorar tu productividad."
+      },
+      "project9": {
+        "description": "Aplicación para explorar el festival Trans Musicales."
+      },
+      "buttons": {
+        "github": "Ver en GitHub",
+        "view": "Ver Proyecto"
+      }
     },
     "skills": {
       "title": "Habilidades",
@@ -270,6 +353,10 @@
       "python": {
         "name": "Python",
         "description": "Automatización, ciencia de datos y backend con Python."
+      },
+      "java": {
+        "name": "Java",
+        "description": "Desarrollo de aplicaciones, sistemas distribuidos y back-end con Java."
       },
       "sqlite": {
         "name": "SQLite",

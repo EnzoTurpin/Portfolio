@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 .parallax-header {
-  background-image: url("img/background.png");
+  background-image: url("img/background.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -166,111 +166,98 @@ nav ul li a {
 }
 
 #projects {
-  background-color: #555;
+  background-color: #f8f8f8;
 }
 
-/* Grille de projets */
+/* Grid Styles */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
-  gap: 20px; /* Espace entre les projets */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centre les éléments horizontalement */
+  gap: 20px;
   margin-top: 40px;
-  width: 100%; /* S'assure que la grille prend toute la largeur disponible */
-  padding: 0; /* Suppression du padding potentiel */
+  width: 100%;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .project {
+  flex: 1 1 calc(33.333% - 40px); /* Chaque projet occupe un tiers de la largeur, moins l'espace de gap */
+  max-width: calc(
+    33.333% - 40px
+  ); /* Limite la largeur maximale pour s'assurer qu'il y a toujours un gap */
   position: relative;
   overflow: hidden;
-  width: 100%;
-  padding: 0;
-  padding-top: 56.25%; /* Ratio 16:9 */
   background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Ajoute un espace en bas pour les lignes suivantes */
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin: 0; /* Suppression du margin potentiel */
-  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.project:hover {
+  transform: translateY(-10px);
 }
 
 .project img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%; /* Assurez-vous que l'image couvre toute la hauteur */
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   object-fit: cover;
-  z-index: 1;
-  transition: all 0.3s ease;
-  margin: 0; /* Suppression du margin potentiel */
-  padding: 0; /* Suppression du padding potentiel */
-  box-sizing: border-box;
 }
 
-/* Pseudo-élément pour la couche de gris */
-.project::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0); /* Initialement transparent */
-  z-index: 2;
-  transition: background-color 0.3s ease;
-}
-
-.project:hover::before {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.3
-  ); /* Couche grise semi-transparente au survol */
+.project-info {
+  padding: 20px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  color: white;
-  text-align: center;
-  padding: 15px 0;
   font-size: 1.5em;
-  z-index: 3;
+  margin: 0 0 10px;
+  color: #333;
 }
 
-.github-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) translateY(20px);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+.project-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.github-button,
+.view-button {
+  display: inline-block;
   padding: 10px 20px;
   background-color: #333;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1.2em;
-  z-index: 3;
+  font-size: 1em;
+  margin-right: 10px;
+  margin-top: auto; /* Ce style pousse les boutons vers le bas */
+  transition: background-color 0.3s ease;
 }
 
-.project:hover .github-button {
-  opacity: 1;
-  transform: translate(-50%, -50%) translateY(0);
+.github-button:hover,
+.view-button:hover {
+  background-color: #555;
 }
 
+/* Section Skills */
 #skills,
 #education,
 #contact {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre horizontalement le contenu */
-  text-align: center; /* Centre le texte */
+  align-items: center;
+  text-align: center;
   padding: 60px 20px;
   background: #f4f4f4;
 }
@@ -278,7 +265,7 @@ nav ul li a {
 #skills ul,
 #education div,
 #contact form {
-  max-width: 800px; /* Limite la largeur du contenu */
+  max-width: 800px;
   margin: 20px auto;
 }
 
@@ -286,7 +273,6 @@ nav ul li a {
   margin: 40px 0;
 }
 
-/* S'assure que toutes les sections de compétences utilisent le même style de grille */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -302,7 +288,6 @@ nav ul li a {
   margin-bottom: 20px;
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
-  text-align: center;
 }
 
 .skill {
@@ -328,11 +313,12 @@ nav ul li a {
   color: #666;
 }
 
+/* Section Education */
 #education {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left; /* Texte aligné à gauche pour une lecture plus naturelle */
+  text-align: left;
   padding: 60px 20px;
   background: #f4f4f4;
 }
@@ -340,23 +326,22 @@ nav ul li a {
 #education h2 {
   font-size: 2.5em;
   margin-bottom: 40px;
-  text-align: center; /* Le titre reste centré */
+  text-align: center;
 }
 
 .education-item {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centre verticalement le contenu */
-  align-items: flex-start; /* Aligne le texte à gauche */
+  justify-content: center;
+  align-items: flex-start;
   max-width: 800px;
-  width: 100%; /* Prend toute la largeur disponible */
+  width: 100%;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 200px; /* Hauteur fixe pour uniformiser les cases */
-  box-sizing: border-box;
+  height: 200px;
 }
 
 .education-item h3 {
@@ -376,17 +361,12 @@ nav ul li a {
   color: #555;
 }
 
-/* S'assure que tout le texte est bien aligné verticalement et horizontalement */
-.education-item p {
-  margin: 0;
-}
-
-/* Section Styles */
+/* Section Contact */
 section {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre horizontalement le contenu */
-  text-align: center; /* Centre le texte */
+  align-items: center;
+  text-align: center;
   padding: 60px 20px;
   background: #f4f4f4;
 }
@@ -400,7 +380,6 @@ section h2 {
 
 section p {
   max-width: 800px;
-  margin: 20px auto;
   line-height: 1.8;
 }
 
@@ -475,7 +454,7 @@ form button:hover {
   border: none;
   cursor: pointer;
   font-size: 20px;
-  display: none; /* Caché par défaut */
+  display: none;
   justify-content: center;
   align-items: center;
   text-align: center;
