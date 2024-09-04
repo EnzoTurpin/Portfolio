@@ -474,6 +474,10 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
+  .parallax-header {
+    background-attachment: scroll;
+  }
+
   .header-content {
     flex-direction: column;
     text-align: center;
