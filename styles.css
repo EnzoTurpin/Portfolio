@@ -173,7 +173,7 @@ nav ul li a {
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centre les éléments horizontalement */
+  justify-content: center;
   gap: 20px;
   margin-top: 40px;
   width: 100%;
@@ -182,17 +182,15 @@ nav ul li a {
 }
 
 .project {
-  flex: 1 1 calc(33.333% - 40px); /* Chaque projet occupe un tiers de la largeur, moins l'espace de gap */
-  max-width: calc(
-    33.333% - 40px
-  ); /* Limite la largeur maximale pour s'assurer qu'il y a toujours un gap */
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
   position: relative;
   overflow: hidden;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  margin-bottom: 20px; /* Ajoute un espace en bas pour les lignes suivantes */
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -241,7 +239,7 @@ nav ul li a {
   border-radius: 5px;
   font-size: 1em;
   margin-right: 10px;
-  margin-top: auto; /* Ce style pousse les boutons vers le bas */
+  margin-top: auto;
   transition: background-color 0.3s ease;
 }
 
@@ -465,4 +463,74 @@ form button:hover {
 
 #scrollToTopBtn:hover {
   background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .project {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .text-info h2 {
+    font-size: 2em;
+  }
+
+  .text-info p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-info h2 {
+    font-size: 1.5em;
+  }
+
+  .text-info p {
+    font-size: 1em;
+  }
+
+  .skill img {
+    width: 40px;
+  }
+
+  .skill h4 {
+    font-size: 1em;
+  }
+
+  .project-title {
+    font-size: 1.2em;
+  }
+
+  .github-button,
+  .view-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
 }
