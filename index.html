@@ -36,6 +36,9 @@
             >
           </li>
         </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div class="hamburger"></div>
+        </div>
       </nav>
 
       <div class="custom-language-selector">
@@ -651,5 +654,26 @@
     </button>
     <script src="scroll.js"></script>
     <script src="traduction.js"></script>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("nav ul");
+        const toggle = document.querySelector(".menu-toggle");
+
+        nav.classList.toggle("show");
+        toggle.classList.toggle("active");
+      }
+
+      // Fermer le menu lorsqu'un lien est cliqué
+      const navLinks = document.querySelectorAll("nav ul li a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const nav = document.querySelector("nav ul");
+          const toggle = document.querySelector(".menu-toggle");
+
+          nav.classList.remove("show");
+          toggle.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>

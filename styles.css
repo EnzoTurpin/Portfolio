@@ -465,6 +465,82 @@ form button:hover {
   background-color: #555;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+
+.hamburger::before,
+.hamburger::after {
+  position: absolute;
+}
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  top: 10px;
+}
+
+.menu-toggle.active .hamburger {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.active .hamburger::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu-toggle.active .hamburger::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+nav ul.show {
+  right: 0;
+}
+
+nav ul li {
+  display: block;
+  margin: 20px 0;
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .project {
@@ -508,6 +584,18 @@ form button:hover {
 
   .text-info p {
     font-size: 1.2em;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
   }
 }
 
