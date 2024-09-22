@@ -1,7 +1,7 @@
 let translations = {};
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("translations.json")
+  fetch("../translations/translations.json")
     .then((response) => response.json())
     .then((data) => {
       translations = data;
@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setLanguage(lang) {
   localStorage.setItem("language", lang);
-  document.getElementById("currentFlag").src = `flags/flag_${lang}.svg`;
+  document.getElementById(
+    "currentFlag"
+  ).src = `../assets/img/flags/flag_${lang}.svg`;
   document
     .getElementById("selectedLanguage")
     .querySelector("span").textContent = lang.toUpperCase();
@@ -46,9 +48,9 @@ function toggleLanguageList() {
 // Met à jour la liste des langues disponibles dans le menu
 function updateLanguageList(selectedLang) {
   const languages = {
-    fr: { flag: "flags/flag_fr.svg", code: "FR" },
-    en: { flag: "flags/flag_en.svg", code: "EN" },
-    es: { flag: "flags/flag_es.svg", code: "ES" },
+    fr: { flag: "../assets/img/flags/flag_fr.svg", code: "FR" },
+    en: { flag: "../assets/img/flags/flag_en.svg", code: "EN" },
+    es: { flag: "../assets/img/flags/flag_es.svg", code: "ES" },
   };
 
   const languageList = document.getElementById("languageList");
@@ -64,26 +66,3 @@ function updateLanguageList(selectedLang) {
     }
   }
 }
-
-// Afficher le bouton lorsque l'utilisateur fait défiler vers le bas de 100px
-window.onscroll = function () {
-  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-  ) {
-    scrollToTopBtn.style.display = "flex"; // Utilise flex pour centrer le contenu
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-};
-
-// Remonter en haut de la page lorsqu'on clique sur le bouton
-document
-  .getElementById("scrollToTopBtn")
-  .addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });

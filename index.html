@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title class="translate" data-key="nav.title">Mon Portfolio</title>
-    <link rel="icon" href="/img/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <title class="translate" data-key="nav.title">
+      Portfolio de Enzo Turpin - Développeur Web Full Stack Junior
+    </title>
+    <meta
+      name="description"
+      content="Portfolio de Enzo Turpin, développeur web full stack junior. Découvrez mes projets, compétences et expériences."
+    />
+
+    <link rel="icon" href="/assets/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
   </head>
   <body>
     <!-- En-tête -->
@@ -36,25 +43,45 @@
             >
           </li>
         </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">
+        <div
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Menu de navigation"
+        >
           <div class="hamburger"></div>
         </div>
       </nav>
 
       <div class="custom-language-selector">
         <div id="selectedLanguage" onclick="toggleLanguageList()">
-          <img src="flags/flag_fr.svg" alt="French Flag" id="currentFlag" />
+          <img
+            src="/assets/img/flags/flag_fr.svg"
+            alt="Drapeau français"
+            id="currentFlag"
+          />
           <span>FR</span>
         </div>
         <ul id="languageList" class="hidden">
           <li onclick="changeLanguage('fr')">
-            <img src="flags/flag_fr.svg" alt="French Flag" /> FR
+            <img
+              src="/assets/img/flags/flag_fr.svg"
+              alt="Sélectionner le français"
+            />
+            FR
           </li>
           <li onclick="changeLanguage('en')">
-            <img src="flags/flag_en.svg" alt="UK Flag" /> EN
+            <img
+              src="/assets/img/flags/flag_en.svg"
+              alt="Sélectionner l'anglais"
+            />
+            EN
           </li>
           <li onclick="changeLanguage('es')">
-            <img src="flags/flag_es.svg" alt="Spanish Flag" /> ES
+            <img
+              src="/assets/img/flags/flag_es.svg"
+              alt="Sélectionner l'espagnol"
+            />
+            ES
           </li>
         </ul>
       </div>
@@ -62,10 +89,11 @@
       <div class="header-content">
         <div class="header-info">
           <img
-            src="/img/icon.png"
-            alt="Photo de Enzo Turpin"
+            src="/assets/img/icon.png"
+            alt="Logo de Enzo Turpin, développeur web"
             class="profile-img"
           />
+
           <div class="text-info">
             <h1 class="translate" data-key="header.name">Enzo Turpin</h1>
             <h2 class="translate" data-key="header.role">
@@ -108,7 +136,10 @@
       <div class="projects-grid">
         <!-- Projet 1 -->
         <div class="project">
-          <img src="img/contact-manager.png" alt="ContactManager Project" />
+          <img
+            src="/assets/img/projects/contact-manager.png"
+            alt="Capture d'écran du projet ContactManager, gestionnaire de contacts"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -136,7 +167,10 @@
 
         <!-- Projet 2 -->
         <div class="project">
-          <img src="/img/quiz.png" alt="EasterQuiz Project" />
+          <img
+            src="/assets/img/projects/quiz.png"
+            alt="Capture d'écran du projet EasterQuiz, quiz sur les traditions de Pâques"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -171,7 +205,10 @@
 
         <!-- Projet 3 -->
         <div class="project">
-          <img src="/img/forum.png" alt="Forum Project" />
+          <img
+            src="/assets/img/projects/forum.png"
+            alt="Capture d'écran du projet Forum, plateforme de discussion pour les passionnés de jeux vidéo"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -206,7 +243,10 @@
 
         <!-- Projet 4 -->
         <div class="project">
-          <img src="/img/gaming.png" alt="Gaming Project" />
+          <img
+            src="/assets/img/projects/gaming.png"
+            alt="Capture d'écran du projet Gaming, catalogue de jeux vidéo avec avis et notes des utilisateurs"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -241,7 +281,10 @@
 
         <!-- Projet 5 -->
         <div class="project">
-          <img src="/img/groupie-tracker.png" alt="GroupieTracker Project" />
+          <img
+            src="/assets/img/projects/groupie-tracker.png"
+            alt="Capture d'écran du projet GroupieTracker, suivi des tournées d'artistes"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -276,7 +319,10 @@
 
         <!-- Projet 6 -->
         <div class="project">
-          <img src="/img/jeux-video.png" alt="Jeux-video Project" />
+          <img
+            src="/assets/img/projects/jeux-video.png"
+            alt="Capture d'écran du projet Jeux-vidéo, classement des jeux vidéo les plus populaires"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -312,7 +358,10 @@
 
         <!-- Projet 7 -->
         <div class="project">
-          <img src="/img/mini-jeux.png" alt="Mini-Jeux Project" />
+          <img
+            src="/assets/img/projects/mini-jeux.png"
+            alt="Capture d'écran du projet Mini-Jeux, collection de mini-jeux amusants"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -347,7 +396,10 @@
 
         <!-- Projet 8 -->
         <div class="project">
-          <img src="/img/task-manager.png" alt="TaskManager Project" />
+          <img
+            src="/assets/img/projects/task-manager.png"
+            alt="Capture d'écran du projet TaskManager, application de gestion de tâches"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -376,7 +428,10 @@
 
         <!-- Projet 9 -->
         <div class="project">
-          <img src="/img/transmusicales.png" alt="TransMusicales Project" />
+          <img
+            src="/assets/img/projects/transmusicales.png"
+            alt="Capture d'écran du projet TransMusicales, exploration du festival des Trans Musicales"
+          />
           <div class="project-info">
             <h3
               class="project-title translate"
@@ -420,21 +475,31 @@
         <h3 class="translate" data-key="skills.frontend">Front-end</h3>
         <div class="skills-grid">
           <div class="skill">
-            <img src="/img/html5.png" alt="HTML" />
+            <img
+              src="/assets/img/technologies/html5.png"
+              alt="Logo HTML5, compétence en structure de pages web"
+            />
             <h4 class="translate" data-key="skills.html.name">HTML</h4>
             <p class="translate" data-key="skills.html.description">
               Maîtrise de la structure des pages web avec HTML5.
             </p>
           </div>
           <div class="skill">
-            <img src="/img/css3.png" alt="CSS" />
+            <img
+              src="/assets/img/technologies/css3.png"
+              alt="Logo CSS3, compétence en stylisation de pages web"
+            />
             <h4 class="translate" data-key="skills.css.name">CSS</h4>
             <p class="translate" data-key="skills.css.description">
               Stylisation des pages web avec CSS3, Flexbox, et Grid.
             </p>
           </div>
           <div class="skill">
-            <img src="/img/javascript.png" alt="JavaScript" />
+            <img
+              src="/assets/img/technologies/javascript.png"
+              alt="Logo JavaScript, compétence en développement d'interfaces interactives"
+            />
+
             <h4 class="translate" data-key="skills.javascript.name">
               JavaScript
             </h4>
@@ -449,28 +514,40 @@
           <h3 class="translate" data-key="skills.backend">Back-end</h3>
           <div class="skills-grid">
             <div class="skill">
-              <img src="/img/php.png" alt="PHP" />
+              <img
+                src="/assets/img/technologies/php.png"
+                alt="Logo PHP, compétence en développement d'applications web dynamiques"
+              />
               <h4 class="translate" data-key="skills.php.name">PHP</h4>
               <p class="translate" data-key="skills.php.description">
                 Développement d'applications web dynamiques avec PHP.
               </p>
             </div>
             <div class="skill">
-              <img src="/img/golang.png" alt="Golang" />
+              <img
+                src="/assets/img/technologies/golang.png"
+                alt="Logo Golang, compétence en développement de services backend performants"
+              />
               <h4 class="translate" data-key="skills.golang.name">Golang</h4>
               <p class="translate" data-key="skills.golang.description">
                 Conception de services backend performants avec Golang.
               </p>
             </div>
             <div class="skill">
-              <img src="/img/python.png" alt="Python" />
+              <img
+                src="/assets/img/technologies/python.png"
+                alt="Logo Python, compétence en automatisation et développement backend"
+              />
               <h4 class="translate" data-key="skills.python.name">Python</h4>
               <p class="translate" data-key="skills.python.description">
                 Automatisation, data science et back-end avec Python.
               </p>
             </div>
             <div class="skill">
-              <img src="/img/java.png" alt="Java" />
+              <img
+                src="/assets/img/technologies/java.png"
+                alt="Logo Java, compétence en développement d'applications et systèmes distribués"
+              />
               <h4 class="translate" data-key="skills.java.name">Java</h4>
               <p class="translate" data-key="skills.java.description">
                 Développement d'applications, systèmes distribués et back-end
@@ -487,14 +564,20 @@
           </h3>
           <div class="skills-grid">
             <div class="skill">
-              <img src="/img/sqlite.png" alt="SQLite" />
+              <img
+                src="/assets/img/technologies/sqlite.png"
+                alt="Logo SQLite, compétence en gestion de bases de données légères"
+              />
               <h4 class="translate" data-key="skills.sqlite.name">SQLite</h4>
               <p class="translate" data-key="skills.sqlite.description">
                 Gestion de bases de données légères avec SQLite.
               </p>
             </div>
             <div class="skill">
-              <img src="/img/mysql.png" alt="MySQL" />
+              <img
+                src="/assets/img/technologies/mysql.png"
+                alt="Logo MySQL, compétence en gestion de bases de données relationnelles"
+              />
               <h4 class="translate" data-key="skills.mysql.name">MySQL</h4>
               <p class="translate" data-key="skills.mysql.description">
                 Gestion de bases de données relationnelles avec MySQL.
@@ -565,7 +648,9 @@
 
     <!-- Section Contact -->
     <section id="contact">
-      <h2 class="translate" data-key="contact.title">Contactez-moi</h2>
+      <h2 id="contact-me" class="translate" data-key="contact.title">
+        Contactez-moi
+      </h2>
       <form id="contact-form">
         <label for="name" class="translate" data-key="contact.form.name"
           >Nom:</label
@@ -635,13 +720,19 @@
         >
       </div>
     </section>
-    <button id="scrollToTopBtn" title="Retour en haut">
+    <button
+      id="scrollToTopBtn"
+      title="Retour en haut"
+      aria-label="Retour en haut"
+    >
       <svg
         width="24"
         height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Icône flèche vers le haut, retour en haut"
       >
         <path
           d="M12 4L12 20M12 4L6 10M12 4L18 10"
@@ -652,28 +743,9 @@
         />
       </svg>
     </button>
-    <script src="scroll.js"></script>
-    <script src="traduction.js"></script>
-    <script>
-      function toggleMenu() {
-        const nav = document.querySelector("nav ul");
-        const toggle = document.querySelector(".menu-toggle");
-
-        nav.classList.toggle("show");
-        toggle.classList.toggle("active");
-      }
-
-      // Fermer le menu lorsqu'un lien est cliqué
-      const navLinks = document.querySelectorAll("nav ul li a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          const nav = document.querySelector("nav ul");
-          const toggle = document.querySelector(".menu-toggle");
-
-          nav.classList.remove("show");
-          toggle.classList.remove("active");
-        });
-      });
-    </script>
+    <script src="/scripts/scroll.js" defer></script>
+    <script src="/scripts/traduction.js" defer></script>
+    <script src="/script/menu.js" defer></script>
+    <script src="/scripts/scroll-btn.js" defer></script>
   </body>
 </html>
