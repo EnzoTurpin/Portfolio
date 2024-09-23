@@ -6,6 +6,7 @@
       "projects": "Projets",
       "skills": "Compétences",
       "education": "Éducation",
+      "resume": "CV",
       "contact": "Contact"
     },
     "header": {
@@ -126,6 +127,10 @@
         "dates": "2019 - 2022"
       }
     },
+    "resume": {
+      "mine": "Mon CV",
+      "download": "Télécharger mon CV"
+    },
     "contact": {
       "title": "Contactez-moi",
       "form": {
@@ -147,6 +152,7 @@
       "projects": "Projects",
       "skills": "Skills",
       "education": "Education",
+      "resume": "Resume",
       "contact": "Contact"
     },
     "header": {
@@ -258,6 +264,10 @@
         "dates": "2019 - 2022"
       }
     },
+    "resume": {
+      "resume": "My resume",
+      "download": "Download my resume"
+    },
     "contact": {
       "title": "Contact Me",
       "form": {
@@ -279,6 +289,7 @@
       "projects": "Proyectos",
       "skills": "Habilidades",
       "education": "Educación",
+      "resume": "Reanudar",
       "contact": "Contacto"
     },
     "header": {
@@ -389,6 +400,10 @@
         "degree": "Bachillerato Profesional en Comercio",
         "dates": "2019 - 2022"
       }
+    },
+    "resume": {
+      "mine": "Mi reanudar",
+      "download": "Descarga mi reanudar"
     },
     "contact": {
       "title": "Contáctame",
