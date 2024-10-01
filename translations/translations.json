@@ -17,45 +17,21 @@
     },
     "about": {
       "title": "À propos de moi",
-      "content": "Étudiant en deuxième année d'informatique à Ynov Campus, je me spécialise dans le développement web, une passion que j'explore à travers divers projets académiques et personnels. Au fil de mon parcours, j'ai acquis des compétences solides en HTML, CSS, JavaScript, ainsi qu'en back-end avec des technologies comme PHP, Golang, et Python. Je maîtrise également l'utilisation des bases de données, que ce soit SQL ou SQLite, et je sais traiter les APIs pour intégrer et manipuler des données de manière efficace. Je suis à la recherche d'un stage qui me permettra de mettre en pratique mes connaissances, de relever des défis techniques, et de contribuer à des projets concrets. Motivé, curieux, et toujours à l'affût des dernières tendances technologiques, je suis prêt à m'investir pleinement dans une équipe dynamique."
+      "content": "Étudiant en 2e année d'informatique à Ynov Campus, spécialisé en développement web PHP, Golang, Python. Expérimenté en bases de données MySQL et intégration d'APIs, je cherche un stage pour appliquer mes compétences et relever des défis concrets. Curieux et motivé, je suis prêt à m'investir dans une équipe dynamique."
     },
     "projects": {
       "title": "Projets",
       "project1": {
-        "title": "ContactManager",
-        "description": "Un gestionnaire de contacts intuitif pour organiser vos relations."
-      },
-      "project2": {
         "title": "EasterQuiz",
         "description": "Quiz amusant sur les traditions de Pâques à travers le monde."
       },
-      "project3": {
+      "project2": {
         "title": "Forum",
         "description": "Une plateforme de discussion pour les passionnés de jeux vidéo."
       },
-      "project4": {
-        "title": "Gaming",
-        "description": "Catalogue de jeux vidéo avec avis et notes des utilisateurs."
-      },
-      "project5": {
+      "project3": {
         "title": "GroupieTracker",
         "description": "Une application pour suivre les tournées de vos artistes préférés."
-      },
-      "project6": {
-        "title": "Jeux-video",
-        "description": "Classement des jeux vidéo les plus populaires avec notes et critiques."
-      },
-      "project7": {
-        "title": "Mini-Jeux",
-        "description": "Collection de mini-jeux amusants pour passer le temps."
-      },
-      "project8": {
-        "title": "TaskManager",
-        "description": "Application de gestion de tâches pour améliorer votre productivité."
-      },
-      "project9": {
-        "title": "TransMusicales",
-        "description": "Application pour explorer le festival des Trans Musicales."
       },
       "buttons": {
         "github": "Voir sur GitHub",
@@ -64,21 +40,8 @@
     },
     "skills": {
       "title": "Compétences",
-      "frontend": "Front-end",
       "backend": "Back-end",
       "databases": "Bases de données",
-      "html": {
-        "name": "HTML",
-        "description": "Maîtrise de la structure des pages web avec HTML5."
-      },
-      "css": {
-        "name": "CSS",
-        "description": "Stylisation des pages web avec CSS3, Flexbox, et Grid."
-      },
-      "javascript": {
-        "name": "JavaScript",
-        "description": "Création d'interfaces utilisateur interactives avec JavaScript."
-      },
       "php": {
         "name": "PHP",
         "description": "Développement d'applications web dynamiques avec PHP."
@@ -94,10 +57,6 @@
       "java": {
         "name": "Java",
         "description": "Développement d'applications, systèmes distribués et back-end avec Java."
-      },
-      "sqlite": {
-        "name": "SQLite",
-        "description": "Gestion de bases de données légères avec SQLite."
       },
       "mysql": {
         "name": "MySQL",
@@ -163,36 +122,18 @@
     },
     "about": {
       "title": "About Me",
-      "content": "Second year computer science student at Ynov Campus, I specialize in web development, a passion that I explore through various academic and personal projects. Throughout my journey, I have acquired solid skills in HTML, CSS, JavaScript, as well as back-end with technologies like PHP, Golang, and Python. I also master the use of databases, whether SQL or SQLite, and I know how to deal with APIs to integrate and manipulate data efficiently. I am looking for an internship that will allow me to put my knowledge into practice, take on technical challenges, and contribute to concrete projects. Motivated, curious, and always on the lookout for the latest technological trends, I am ready to fully invest in a dynamic team."
+      "content": "2nd year computer science student at Ynov Campus, specialized in web development PHP, Golang, Python. Experienced in MySQL databases and API integration, I am looking for an internship to apply my skills and take on concrete challenges. Curious and motivated, I am ready to invest in a dynamic team."
     },
     "projects": {
       "title": "Projects",
       "project1": {
-        "description": "An intuitive contact manager to organize your relationships."
-      },
-      "project2": {
         "description": "Fun quiz about Easter traditions around the world."
       },
-      "project3": {
+      "project2": {
         "description": "A discussion platform for video game enthusiasts."
       },
-      "project4": {
-        "description": "Video game catalog with user reviews and ratings."
-      },
-      "project5": {
+      "project3": {
         "description": "An app to track your favorite artists' tours."
-      },
-      "project6": {
-        "description": "Ranking of the most popular video games with ratings and reviews."
-      },
-      "project7": {
-        "description": "Collection of fun mini-games to pass the time."
-      },
-      "project8": {
-        "description": "Task management app to boost your productivity."
-      },
-      "project9": {
-        "description": "App to explore the Trans Musicales festival."
       },
       "buttons": {
         "github": "View on GitHub",
@@ -201,21 +142,8 @@
     },
     "skills": {
       "title": "Skills",
-      "frontend": "Front-end",
       "backend": "Back-end",
       "databases": "Databases",
-      "html": {
-        "name": "HTML",
-        "description": "Mastery of web page structure with HTML5."
-      },
-      "css": {
-        "name": "CSS",
-        "description": "Styling web pages with CSS3, Flexbox, and Grid."
-      },
-      "javascript": {
-        "name": "JavaScript",
-        "description": "Creating interactive user interfaces with JavaScript."
-      },
       "php": {
         "name": "PHP",
         "description": "Developing dynamic web applications with PHP."
@@ -231,10 +159,6 @@
       "java": {
         "name": "Java",
         "description": "Development of applications, distributed systems and back-end with Java."
-      },
-      "sqlite": {
-        "name": "SQLite",
-        "description": "Managing lightweight databases with SQLite."
       },
       "mysql": {
         "name": "MySQL",
@@ -271,7 +195,6 @@
     "contact": {
       "title": "Contact Me",
       "form": {
-        "name": "Name:",
         "email": "Email:",
         "message": "Message:",
         "submit": "Send"
@@ -300,36 +223,18 @@
     },
     "about": {
       "title": "Sobre mí",
-      "content": "Estudiante de segundo año de informática en Ynov Campus, me especializo en desarrollo web, pasión que exploro a través de diversos proyectos académicos y personales. A lo largo de mi trayectoria, he adquirido sólidas habilidades en HTML, CSS, JavaScript, así como back-end con tecnologías como PHP, Golang y Python. También domino el uso de bases de datos, ya sean SQL o SQLite, y sé manejar API para integrar y manipular datos de manera eficiente. Busco una pasantía que me permita poner en práctica mis conocimientos, asumir desafíos técnicos y contribuir a proyectos concretos. Motivado, curioso y siempre atento a las últimas tendencias tecnológicas, estoy dispuesto a invertir de lleno en un equipo dinámico."
+      "content": "Estudiante de 2do año de informática en Ynov Campus, especializado en desarrollo web PHP, Golang, Python. Con experiencia en bases de datos MySQL e integración API, busco una pasantía para aplicar mis habilidades y asumir desafíos concretos. Curioso y motivado, estoy dispuesto a invertir en un equipo dinámico."
     },
     "projects": {
       "title": "Proyectos",
       "project1": {
-        "description": "Un gestor de contactos intuitivo para organizar tus relaciones."
-      },
-      "project2": {
         "description": "Quiz divertido sobre las tradiciones de Pascua en el mundo."
       },
-      "project3": {
+      "project2": {
         "description": "Una plataforma de discusión para entusiastas de los videojuegos."
       },
-      "project4": {
-        "description": "Catálogo de videojuegos con reseñas y calificaciones de usuarios."
-      },
-      "project5": {
+      "project3": {
         "description": "Una aplicación para seguir las giras de tus artistas favoritos."
-      },
-      "project6": {
-        "description": "Clasificación de los videojuegos más populares con calificaciones y reseñas."
-      },
-      "project7": {
-        "description": "Colección de mini-juegos divertidos para pasar el tiempo."
-      },
-      "project8": {
-        "description": "Aplicación de gestión de tareas para mejorar tu productividad."
-      },
-      "project9": {
-        "description": "Aplicación para explorar el festival Trans Musicales."
       },
       "buttons": {
         "github": "Ver en GitHub",
@@ -338,21 +243,8 @@
     },
     "skills": {
       "title": "Habilidades",
-      "frontend": "Front-end",
       "backend": "Back-end",
       "databases": "Bases de datos",
-      "html": {
-        "name": "HTML",
-        "description": "Dominio de la estructura de las páginas web con HTML5."
-      },
-      "css": {
-        "name": "CSS",
-        "description": "Estilización de páginas web con CSS3, Flexbox y Grid."
-      },
-      "javascript": {
-        "name": "JavaScript",
-        "description": "Creación de interfaces de usuario interactivas con JavaScript."
-      },
       "php": {
         "name": "PHP",
         "description": "Desarrollo de aplicaciones web dinámicas con PHP."
@@ -368,10 +260,6 @@
       "java": {
         "name": "Java",
         "description": "Desarrollo de aplicaciones, sistemas distribuidos y back-end con Java."
-      },
-      "sqlite": {
-        "name": "SQLite",
-        "description": "Gestión de bases de datos ligeras con SQLite."
       },
       "mysql": {
         "name": "MySQL",
@@ -408,7 +296,6 @@
     "contact": {
       "title": "Contáctame",
       "form": {
-        "name": "Nombre:",
         "email": "Correo electrónico:",
         "message": "Mensaje:",
         "submit": "Enviar"

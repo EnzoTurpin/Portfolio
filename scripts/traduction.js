@@ -12,9 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setLanguage(lang) {
   localStorage.setItem("language", lang);
-  document.getElementById(
-    "currentFlag"
-  ).src = `../assets/img/flags/flag_${lang}.svg`;
+  document.getElementById("currentFlag").src = `../assets/svg/flag_${lang}.svg`;
   document
     .getElementById("selectedLanguage")
     .querySelector("span").textContent = lang.toUpperCase();
@@ -48,9 +46,9 @@ function toggleLanguageList() {
 // Met à jour la liste des langues disponibles dans le menu
 function updateLanguageList(selectedLang) {
   const languages = {
-    fr: { flag: "../assets/img/flags/flag_fr.svg", code: "FR" },
-    en: { flag: "../assets/img/flags/flag_en.svg", code: "EN" },
-    es: { flag: "../assets/img/flags/flag_es.svg", code: "ES" },
+    fr: { flag: "../assets/svg/flag_fr.svg", code: "FR" },
+    en: { flag: "../assets/svg/flag_en.svg", code: "EN" },
+    es: { flag: "../assets/svg/flag_es.svg", code: "ES" },
   };
 
   const languageList = document.getElementById("languageList");

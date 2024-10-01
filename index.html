@@ -13,6 +13,10 @@
 
     <link rel="icon" href="/assets/img/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- En-tête -->
@@ -58,7 +62,7 @@
       <div class="custom-language-selector">
         <div id="selectedLanguage" onclick="toggleLanguageList()">
           <img
-            src="/assets/img/flags/flag_fr.svg"
+            src="/assets/svg/flag_fr.svg"
             alt="Drapeau français"
             id="currentFlag"
           />
@@ -66,24 +70,15 @@
         </div>
         <ul id="languageList" class="hidden">
           <li onclick="changeLanguage('fr')">
-            <img
-              src="/assets/img/flags/flag_fr.svg"
-              alt="Sélectionner le français"
-            />
+            <img src="/assets/svg/flag_fr.svg" alt="Sélectionner le français" />
             FR
           </li>
           <li onclick="changeLanguage('en')">
-            <img
-              src="/assets/img/flags/flag_en.svg"
-              alt="Sélectionner l'anglais"
-            />
+            <img src="/assets/svg/flag_en.svg" alt="Sélectionner l'anglais" />
             EN
           </li>
           <li onclick="changeLanguage('es')">
-            <img
-              src="/assets/img/flags/flag_es.svg"
-              alt="Sélectionner l'espagnol"
-            />
+            <img src="/assets/svg/flag_es.svg" alt="Sélectionner l'espagnol" />
             ES
           </li>
         </ul>
@@ -118,18 +113,11 @@
     <section id="about">
       <h2 class="translate" data-key="about.title">À propos de moi</h2>
       <p class="translate" data-key="about.content">
-        Étudiant en deuxième année d'informatique à Ynov Campus, je me
-        spécialise dans le développement web, une passion que j'explore à
-        travers divers projets académiques et personnels. Au fil de mon
-        parcours, j'ai acquis des compétences solides en HTML, CSS, JavaScript,
-        ainsi qu'en back-end avec des technologies comme PHP, Golang, et Python.
-        Je maîtrise également l'utilisation des bases de données, que ce soit
-        SQL ou SQLite, et je sais traiter les APIs pour intégrer et manipuler
-        des données de manière efficace. Je suis à la recherche d'un stage qui
-        me permettra de mettre en pratique mes connaissances, de relever des
-        défis techniques, et de contribuer à des projets concrets. Motivé,
-        curieux, et toujours à l'affût des dernières tendances technologiques,
-        je suis prêt à m'investir pleinement dans une équipe dynamique.
+        Étudiant en 2e année d'informatique à Ynov Campus, spécialisé en
+        développement web PHP, Golang, Python. Expérimenté en bases de données
+        MySQL et intégration d'APIs, je cherche un stage pour appliquer mes
+        compétences et relever des défis concrets. Curieux et motivé, je suis
+        prêt à m'investir dans une équipe dynamique.
       </p>
     </section>
 
@@ -140,50 +128,93 @@
         <!-- Projet 1 -->
         <div class="project">
           <img
-            src="/assets/img/projects/contact-manager.png"
-            alt="Capture d'écran du projet ContactManager, gestionnaire de contacts"
-          />
-          <div class="project-info">
-            <h3
-              class="project-title translate"
-              data-key="projects.project1.title"
-            >
-              ContactManager
-            </h3>
-            <p
-              class="project-description translate"
-              data-key="projects.project1.description"
-            >
-              Un gestionnaire de contacts intuitif pour organiser vos relations.
-            </p>
-            <div class="project-buttons">
-              <a
-                href="https://github.com/EnzoTurpin/ContactManager"
-                class="github-button translate"
-                data-key="projects.buttons.github"
-                target="_blank"
-                >Voir sur GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Projet 2 -->
-        <div class="project">
-          <img
             src="/assets/img/projects/quiz.png"
             alt="Capture d'écran du projet EasterQuiz, quiz sur les traditions de Pâques"
           />
           <div class="project-info">
             <h3
               class="project-title translate"
-              data-key="projects.project2.title"
+              data-key="projects.project1.title"
             >
               EasterQuiz
             </h3>
+
+            <!-- Conteneur pour les fichiers SVG -->
+            <div class="technologies-used">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#E65100"
+                  d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                ></path>
+                <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path
+                  fill="#FFF"
+                  d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
+                ></path>
+                <path
+                  fill="#EEE"
+                  d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#0277BD"
+                  d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                ></path>
+                <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path
+                  fill="#FFF"
+                  d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
+                ></path>
+                <path
+                  fill="#EEE"
+                  d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                <path
+                  fill="#000001"
+                  d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(46, 219, 227, 1); transform: ; msfilter: "
+              >
+                <path
+                  d="M3.79 10.17a.18.18 0 0 0-.11 0l-.2.27H7a.15.15 0 0 0 .1-.06l.17-.26v-.05zm-1.47.89a.14.14 0 0 0-.11 0l-.2.26v.05h4.6a.09.09 0 0 0 .09-.06l.08-.23v-.06zM4.6 12a.13.13 0 0 0-.1.06l-.13.24v.06h2.15a.08.08 0 0 0 .07-.07v-.23s0-.07-.06-.07zm15.99-3.07a3.62 3.62 0 0 0-2.78-.5 4.09 4.09 0 0 0-2.72 1.63 4 4 0 0 0-.67 1.26h-3.14a.25.25 0 0 0-.24.16c-.14.25-.37.76-.5 1.06s0 .29.18.29h1.88a2.8 2.8 0 0 1-.26.36 1.81 1.81 0 0 1-1.65.65 1.53 1.53 0 0 1-1.32-1.53 2.07 2.07 0 0 1 1-1.85 1.71 1.71 0 0 1 1.77-.15 1.36 1.36 0 0 1 .45.37c.13.15.14.14.29.1l1.63-.43c.12 0 .16-.08.1-.16a3 3 0 0 0-1.13-1.38 3.35 3.35 0 0 0-2.58-.47A4.31 4.31 0 0 0 8.16 10a3.81 3.81 0 0 0-.82 2.85A3 3 0 0 0 8.57 15a3.46 3.46 0 0 0 2.62.65A4.06 4.06 0 0 0 14 14a4.33 4.33 0 0 0 .41-.69 3 3 0 0 0 1 1.55 3.68 3.68 0 0 0 2.38.86c.25 0 .51 0 .78-.09a4.51 4.51 0 0 0 2.33-1.25A3.72 3.72 0 0 0 22 11.1a3 3 0 0 0-1.41-2.17zm-1.78 4.73a1.81 1.81 0 0 1-1.59.06 1.61 1.61 0 0 1-.9-1.84A2.12 2.12 0 0 1 18 10.19a1.59 1.59 0 0 1 2 1.29 2.91 2.91 0 0 1 0 .32 2.11 2.11 0 0 1-1.19 1.86z"
+                ></path>
+              </svg>
+            </div>
+
             <p
               class="project-description translate"
-              data-key="projects.project2.description"
+              data-key="projects.project1.description"
             >
               Quiz amusant sur les traditions de Pâques à travers le monde.
             </p>
@@ -196,7 +227,7 @@
                 >Voir sur GitHub</a
               >
               <a
-                href="https://enzoturpin.github.io/EasterQuiz"
+                href="#"
                 class="view-button translate"
                 data-key="projects.buttons.view"
                 target="_blank"
@@ -206,7 +237,7 @@
           </div>
         </div>
 
-        <!-- Projet 3 -->
+        <!-- Projet 2 -->
         <div class="project">
           <img
             src="/assets/img/projects/forum.png"
@@ -215,13 +246,97 @@
           <div class="project-info">
             <h3
               class="project-title translate"
-              data-key="projects.project3.title"
+              data-key="projects.project2.title"
             >
               Forum
             </h3>
+            <!-- Conteneur pour les fichiers SVG -->
+            <div class="technologies-used">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#E65100"
+                  d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                ></path>
+                <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path
+                  fill="#FFF"
+                  d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
+                ></path>
+                <path
+                  fill="#EEE"
+                  d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#0277BD"
+                  d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                ></path>
+                <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path
+                  fill="#FFF"
+                  d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
+                ></path>
+                <path
+                  fill="#EEE"
+                  d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                <path
+                  fill="#000001"
+                  d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(46, 219, 227, 1); transform: ; msfilter: "
+              >
+                <path
+                  d="M3.79 10.17a.18.18 0 0 0-.11 0l-.2.27H7a.15.15 0 0 0 .1-.06l.17-.26v-.05zm-1.47.89a.14.14 0 0 0-.11 0l-.2.26v.05h4.6a.09.09 0 0 0 .09-.06l.08-.23v-.06zM4.6 12a.13.13 0 0 0-.1.06l-.13.24v.06h2.15a.08.08 0 0 0 .07-.07v-.23s0-.07-.06-.07zm15.99-3.07a3.62 3.62 0 0 0-2.78-.5 4.09 4.09 0 0 0-2.72 1.63 4 4 0 0 0-.67 1.26h-3.14a.25.25 0 0 0-.24.16c-.14.25-.37.76-.5 1.06s0 .29.18.29h1.88a2.8 2.8 0 0 1-.26.36 1.81 1.81 0 0 1-1.65.65 1.53 1.53 0 0 1-1.32-1.53 2.07 2.07 0 0 1 1-1.85 1.71 1.71 0 0 1 1.77-.15 1.36 1.36 0 0 1 .45.37c.13.15.14.14.29.1l1.63-.43c.12 0 .16-.08.1-.16a3 3 0 0 0-1.13-1.38 3.35 3.35 0 0 0-2.58-.47A4.31 4.31 0 0 0 8.16 10a3.81 3.81 0 0 0-.82 2.85A3 3 0 0 0 8.57 15a3.46 3.46 0 0 0 2.62.65A4.06 4.06 0 0 0 14 14a4.33 4.33 0 0 0 .41-.69 3 3 0 0 0 1 1.55 3.68 3.68 0 0 0 2.38.86c.25 0 .51 0 .78-.09a4.51 4.51 0 0 0 2.33-1.25A3.72 3.72 0 0 0 22 11.1a3 3 0 0 0-1.41-2.17zm-1.78 4.73a1.81 1.81 0 0 1-1.59.06 1.61 1.61 0 0 1-.9-1.84A2.12 2.12 0 0 1 18 10.19a1.59 1.59 0 0 1 2 1.29 2.91 2.91 0 0 1 0 .32 2.11 2.11 0 0 1-1.19 1.86z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M 3.125 1 C 2.219 1 1.5030625 1.4805 1.1640625 2.3125 C 1.0570625 2.5695 1.0029531 2.8420469 1.0019531 3.1230469 C 1.0009531 4.0540469 1.6009375 4.8097188 1.9609375 5.2617188 C 2.0239375 5.3407187 2.080625 5.4110938 2.140625 5.4960938 L 2.3027344 5.7109375 C 2.4637344 5.9219375 2.6470781 6.16125 2.7050781 6.28125 C 2.7240781 6.33625 2.7492031 6.4326875 2.7832031 6.5546875 C 2.9402031 7.1196875 3.2332187 8.16975 3.6992188 8.96875 C 3.8872187 9.29075 4.1517969 9.6954687 4.3417969 9.9804688 C 4.2147969 10.616469 4 11.788 4 12.5 C 4 13.75 4.2592188 14.753875 4.8242188 15.671875 C 5.0332187 15.999875 5.671 17 6.75 17 C 7.133 17 7.7694062 16.850391 7.9414062 15.900391 C 8.7064063 16.887391 10 18.125 12 19 C 12 19 8.2507969 14.625438 7.5917969 11.898438 C 7.5917969 11.898437 6.874625 12.625375 6.265625 14.109375 C 6.083625 13.651375 6 13.135 6 12.5 C 6 11.873 6.2758125 10.471375 6.3828125 9.984375 L 6.4765625 9.5605469 L 6.2304688 9.203125 C 6.2264687 9.196125 5.7227344 8.4688906 5.4277344 7.9628906 C 5.0917344 7.3868906 4.8439375 6.4955781 4.7109375 6.0175781 C 4.6459375 5.7845781 4.594875 5.6159531 4.546875 5.5019531 C 4.371875 5.1229531 4.115625 4.7900937 3.890625 4.4960938 L 3.765625 4.3300781 C 3.702625 4.2390781 3.6193906 4.133625 3.5253906 4.015625 C 3.3423906 3.785625 3.0017188 3.3570312 3.0117188 3.0820312 L 3.1230469 3.0039062 L 3.125 3 C 3.92 3 4.9440781 3.5643437 5.3300781 3.7773438 C 5.4560781 3.8463438 5.5486563 3.8940156 5.5976562 3.9160156 L 5.7714844 3.9921875 L 6.1132812 4.0039062 C 6.5602813 4.0139062 7.9189063 4.0456875 8.8789062 4.4296875 C 10.629906 5.1296875 11.598031 5.830375 12.582031 7.109375 C 14.906031 10.131375 15.763484 14.044984 15.771484 14.083984 L 15.896484 14.648438 L 16.443359 14.826172 C 16.462359 14.833172 17.992922 15.344641 19.419922 16.681641 C 17.624922 17.125641 17 18 17 18 C 17 18 17.476 18.928 19.75 20.375 C 21.125 21.25 21.875 21.875 23 23 C 23 23 21.875688 20.499813 20.304688 18.507812 C 21.500687 18.124813 22.970703 17.925781 22.970703 17.925781 L 22.060547 16.664062 C 20.562547 14.587063 18.553656 13.538859 17.597656 13.130859 C 17.265656 11.864859 16.262969 8.614625 14.167969 5.890625 C 12.968969 4.331625 11.693094 3.3993125 9.6210938 2.5703125 C 8.3940937 2.0803125 6.9187188 2.0218594 6.2617188 2.0058594 C 5.6867187 1.6898594 4.409 1 3.125 1 z M 7.1875 5 C 7.1875 5 6.75 5 6.25 5.125 L 7.625 6.9980469 C 8 6.5000469 8 5.9179688 8 5.9179688 C 8 5.9179688 7.7505 5.25 7.1875 5 z"
+                ></path>
+              </svg>
+            </div>
             <p
               class="project-description translate"
-              data-key="projects.project3.description"
+              data-key="projects.project2.description"
             >
               Une plateforme de discussion pour les passionnés de jeux vidéo.
             </p>
@@ -234,7 +349,7 @@
                 >Voir sur GitHub</a
               >
               <a
-                href="https://enzoturpin.github.io/Forum"
+                href="https://forum.enzo-turpin.fr"
                 class="view-button translate"
                 data-key="projects.buttons.view"
                 target="_blank"
@@ -244,45 +359,7 @@
           </div>
         </div>
 
-        <!-- Projet 4 -->
-        <div class="project">
-          <img
-            src="/assets/img/projects/gaming.png"
-            alt="Capture d'écran du projet Gaming, catalogue de jeux vidéo avec avis et notes des utilisateurs"
-          />
-          <div class="project-info">
-            <h3
-              class="project-title translate"
-              data-key="projects.project4.title"
-            >
-              Gaming
-            </h3>
-            <p
-              class="project-description translate"
-              data-key="projects.project4.description"
-            >
-              Catalogue de jeux vidéo avec avis et notes des utilisateurs.
-            </p>
-            <div class="project-buttons">
-              <a
-                href="https://github.com/EnzoTurpin/Gaming"
-                class="github-button translate"
-                data-key="projects.buttons.github"
-                target="_blank"
-                >Voir sur GitHub</a
-              >
-              <a
-                href="https://enzoturpin.github.io/Gaming"
-                class="view-button translate"
-                data-key="projects.buttons.view"
-                target="_blank"
-                >Voir le Projet</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Projet 5 -->
+        <!-- Projet 3 -->
         <div class="project">
           <img
             src="/assets/img/projects/groupie-tracker.png"
@@ -291,13 +368,85 @@
           <div class="project-info">
             <h3
               class="project-title translate"
-              data-key="projects.project5.title"
+              data-key="projects.project3.title"
             >
               GroupieTracker
             </h3>
+            <!-- Conteneur pour les fichiers SVG -->
+            <div class="technologies-used">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#E65100"
+                  d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                ></path>
+                <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path
+                  fill="#FFF"
+                  d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
+                ></path>
+                <path
+                  fill="#EEE"
+                  d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#0277BD"
+                  d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                ></path>
+                <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                <path
+                  fill="#FFF"
+                  d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
+                ></path>
+                <path
+                  fill="#EEE"
+                  d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 48 48"
+              >
+                <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                <path
+                  fill="#000001"
+                  d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(46, 219, 227, 1); transform: ; msfilter: "
+              >
+                <path
+                  d="M3.79 10.17a.18.18 0 0 0-.11 0l-.2.27H7a.15.15 0 0 0 .1-.06l.17-.26v-.05zm-1.47.89a.14.14 0 0 0-.11 0l-.2.26v.05h4.6a.09.09 0 0 0 .09-.06l.08-.23v-.06zM4.6 12a.13.13 0 0 0-.1.06l-.13.24v.06h2.15a.08.08 0 0 0 .07-.07v-.23s0-.07-.06-.07zm15.99-3.07a3.62 3.62 0 0 0-2.78-.5 4.09 4.09 0 0 0-2.72 1.63 4 4 0 0 0-.67 1.26h-3.14a.25.25 0 0 0-.24.16c-.14.25-.37.76-.5 1.06s0 .29.18.29h1.88a2.8 2.8 0 0 1-.26.36 1.81 1.81 0 0 1-1.65.65 1.53 1.53 0 0 1-1.32-1.53 2.07 2.07 0 0 1 1-1.85 1.71 1.71 0 0 1 1.77-.15 1.36 1.36 0 0 1 .45.37c.13.15.14.14.29.1l1.63-.43c.12 0 .16-.08.1-.16a3 3 0 0 0-1.13-1.38 3.35 3.35 0 0 0-2.58-.47A4.31 4.31 0 0 0 8.16 10a3.81 3.81 0 0 0-.82 2.85A3 3 0 0 0 8.57 15a3.46 3.46 0 0 0 2.62.65A4.06 4.06 0 0 0 14 14a4.33 4.33 0 0 0 .41-.69 3 3 0 0 0 1 1.55 3.68 3.68 0 0 0 2.38.86c.25 0 .51 0 .78-.09a4.51 4.51 0 0 0 2.33-1.25A3.72 3.72 0 0 0 22 11.1a3 3 0 0 0-1.41-2.17zm-1.78 4.73a1.81 1.81 0 0 1-1.59.06 1.61 1.61 0 0 1-.9-1.84A2.12 2.12 0 0 1 18 10.19a1.59 1.59 0 0 1 2 1.29 2.91 2.91 0 0 1 0 .32 2.11 2.11 0 0 1-1.19 1.86z"
+                ></path>
+              </svg>
+            </div>
             <p
               class="project-description translate"
-              data-key="projects.project5.description"
+              data-key="projects.project3.description"
             >
               Une application pour suivre les tournées de vos artistes préférés.
             </p>
@@ -310,154 +459,7 @@
                 >Voir sur GitHub</a
               >
               <a
-                href="https://enzoturpin.github.io/GROUPIE-TRACKER"
-                class="view-button translate"
-                data-key="projects.buttons.view"
-                target="_blank"
-                >Voir le Projet</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Projet 6 -->
-        <div class="project">
-          <img
-            src="/assets/img/projects/jeux-video.png"
-            alt="Capture d'écran du projet Jeux-vidéo, classement des jeux vidéo les plus populaires"
-          />
-          <div class="project-info">
-            <h3
-              class="project-title translate"
-              data-key="projects.project6.title"
-            >
-              Jeux-video
-            </h3>
-            <p
-              class="project-description translate"
-              data-key="projects.project6.description"
-            >
-              Classement des jeux vidéo les plus populaires avec notes et
-              critiques.
-            </p>
-            <div class="project-buttons">
-              <a
-                href="https://github.com/EnzoTurpin/Jeux-video"
-                class="github-button translate"
-                data-key="projects.buttons.github"
-                target="_blank"
-                >Voir sur GitHub</a
-              >
-              <a
-                href="https://enzoturpin.github.io/Jeux-video"
-                class="view-button translate"
-                data-key="projects.buttons.view"
-                target="_blank"
-                >Voir le Projet</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Projet 7 -->
-        <div class="project">
-          <img
-            src="/assets/img/projects/mini-jeux.png"
-            alt="Capture d'écran du projet Mini-Jeux, collection de mini-jeux amusants"
-          />
-          <div class="project-info">
-            <h3
-              class="project-title translate"
-              data-key="projects.project7.title"
-            >
-              Mini-Jeux
-            </h3>
-            <p
-              class="project-description translate"
-              data-key="projects.project7.description"
-            >
-              Collection de mini-jeux amusants pour passer le temps.
-            </p>
-            <div class="project-buttons">
-              <a
-                href="https://github.com/EnzoTurpin/Mini-jeux"
-                class="github-button translate"
-                data-key="projects.buttons.github"
-                target="_blank"
-                >Voir sur GitHub</a
-              >
-              <a
-                href="https://enzoturpin.github.io/Mini-jeux"
-                class="view-button translate"
-                data-key="projects.buttons.view"
-                target="_blank"
-                >Voir le Projet</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Projet 8 -->
-        <div class="project">
-          <img
-            src="/assets/img/projects/task-manager.png"
-            alt="Capture d'écran du projet TaskManager, application de gestion de tâches"
-          />
-          <div class="project-info">
-            <h3
-              class="project-title translate"
-              data-key="projects.project8.title"
-            >
-              TaskManager
-            </h3>
-            <p
-              class="project-description translate"
-              data-key="projects.project8.description"
-            >
-              Application de gestion de tâches pour améliorer votre
-              productivité.
-            </p>
-            <div class="project-buttons">
-              <a
-                href="https://github.com/EnzoTurpin/TASKMANAGER"
-                class="github-button translate"
-                data-key="projects.buttons.github"
-                target="_blank"
-                >Voir sur GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Projet 9 -->
-        <div class="project">
-          <img
-            src="/assets/img/projects/transmusicales.png"
-            alt="Capture d'écran du projet TransMusicales, exploration du festival des Trans Musicales"
-          />
-          <div class="project-info">
-            <h3
-              class="project-title translate"
-              data-key="projects.project9.title"
-            >
-              TransMusicales
-            </h3>
-            <p
-              class="project-description translate"
-              data-key="projects.project9.description"
-            >
-              Application pour explorer le festival des Trans Musicales.
-            </p>
-            <div class="project-buttons">
-              <a
-                href="https://github.com/EnzoTurpin/TransMusicales"
-                class="github-button translate"
-                data-key="projects.buttons.github"
-                target="_blank"
-                >Voir sur GitHub</a
-              >
-              <a
-                href="https://enzoturpin.github.io/TransMusicales"
+                href="https://groupietracker.enzo-turpin.fr/"
                 class="view-button translate"
                 data-key="projects.buttons.view"
                 target="_blank"
@@ -473,90 +475,50 @@
     <section id="skills">
       <h2 class="translate" data-key="skills.title">Compétences</h2>
 
-      <!-- Compétences Front-end -->
+      <!-- Compétences Back-end -->
       <div class="skill-category">
-        <h3 class="translate" data-key="skills.frontend">Front-end</h3>
+        <h3 class="translate" data-key="skills.backend">Back-end</h3>
         <div class="skills-grid">
           <div class="skill">
             <img
-              src="/assets/img/technologies/html5.png"
-              alt="Logo HTML5, compétence en structure de pages web"
+              src="/assets/img/technologies/php.png"
+              alt="Logo PHP, compétence en développement d'applications web dynamiques"
             />
-            <h4 class="translate" data-key="skills.html.name">HTML</h4>
-            <p class="translate" data-key="skills.html.description">
-              Maîtrise de la structure des pages web avec HTML5.
+            <h4 class="translate" data-key="skills.php.name">PHP</h4>
+            <p class="translate" data-key="skills.php.description">
+              Développement d'applications web dynamiques avec PHP.
             </p>
           </div>
           <div class="skill">
             <img
-              src="/assets/img/technologies/css3.png"
-              alt="Logo CSS3, compétence en stylisation de pages web"
+              src="/assets/img/technologies/golang.png"
+              alt="Logo Golang, compétence en développement de services backend performants"
             />
-            <h4 class="translate" data-key="skills.css.name">CSS</h4>
-            <p class="translate" data-key="skills.css.description">
-              Stylisation des pages web avec CSS3, Flexbox, et Grid.
+            <h4 class="translate" data-key="skills.golang.name">Golang</h4>
+            <p class="translate" data-key="skills.golang.description">
+              Conception de services backend performants avec Golang.
             </p>
           </div>
           <div class="skill">
             <img
-              src="/assets/img/technologies/javascript.png"
-              alt="Logo JavaScript, compétence en développement d'interfaces interactives"
+              src="/assets/img/technologies/python.png"
+              alt="Logo Python, compétence en automatisation et développement backend"
             />
-
-            <h4 class="translate" data-key="skills.javascript.name">
-              JavaScript
-            </h4>
-            <p class="translate" data-key="skills.javascript.description">
-              Création d'interfaces utilisateur interactives avec JavaScript.
+            <h4 class="translate" data-key="skills.python.name">Python</h4>
+            <p class="translate" data-key="skills.python.description">
+              Automatisation, data science et back-end avec Python.
             </p>
           </div>
-        </div>
-
-        <!-- Compétences Back-end -->
-        <div class="skill-category">
-          <h3 class="translate" data-key="skills.backend">Back-end</h3>
-          <div class="skills-grid">
-            <div class="skill">
-              <img
-                src="/assets/img/technologies/php.png"
-                alt="Logo PHP, compétence en développement d'applications web dynamiques"
-              />
-              <h4 class="translate" data-key="skills.php.name">PHP</h4>
-              <p class="translate" data-key="skills.php.description">
-                Développement d'applications web dynamiques avec PHP.
-              </p>
-            </div>
-            <div class="skill">
-              <img
-                src="/assets/img/technologies/golang.png"
-                alt="Logo Golang, compétence en développement de services backend performants"
-              />
-              <h4 class="translate" data-key="skills.golang.name">Golang</h4>
-              <p class="translate" data-key="skills.golang.description">
-                Conception de services backend performants avec Golang.
-              </p>
-            </div>
-            <div class="skill">
-              <img
-                src="/assets/img/technologies/python.png"
-                alt="Logo Python, compétence en automatisation et développement backend"
-              />
-              <h4 class="translate" data-key="skills.python.name">Python</h4>
-              <p class="translate" data-key="skills.python.description">
-                Automatisation, data science et back-end avec Python.
-              </p>
-            </div>
-            <div class="skill">
-              <img
-                src="/assets/img/technologies/java.png"
-                alt="Logo Java, compétence en développement d'applications et systèmes distribués"
-              />
-              <h4 class="translate" data-key="skills.java.name">Java</h4>
-              <p class="translate" data-key="skills.java.description">
-                Développement d'applications, systèmes distribués et back-end
-                avec Java.
-              </p>
-            </div>
+          <div class="skill">
+            <img
+              src="/assets/img/technologies/java.png"
+              alt="Logo Java, compétence en développement d'applications et systèmes distribués"
+            />
+            <h4 class="translate" data-key="skills.java.name">Java</h4>
+            <p class="translate" data-key="skills.java.description">
+              Développement d'applications, systèmes distribués et back-end avec
+              Java.
+            </p>
           </div>
         </div>
 
@@ -566,16 +528,6 @@
             Bases de données
           </h3>
           <div class="skills-grid">
-            <div class="skill">
-              <img
-                src="/assets/img/technologies/sqlite.png"
-                alt="Logo SQLite, compétence en gestion de bases de données légères"
-              />
-              <h4 class="translate" data-key="skills.sqlite.name">SQLite</h4>
-              <p class="translate" data-key="skills.sqlite.description">
-                Gestion de bases de données légères avec SQLite.
-              </p>
-            </div>
             <div class="skill">
               <img
                 src="/assets/img/technologies/mysql.png"
@@ -595,57 +547,71 @@
     <section id="education" class="parallax-section">
       <h2 class="translate" data-key="education.title">Éducation</h2>
 
-      <div class="education-item">
-        <h3 class="translate" data-key="education.ynov.school">Ynov Campus</h3>
-        <p class="education-degree translate" data-key="education.ynov.degree">
-          Bachelor - Informatique
-        </p>
-        <p class="education-dates translate" data-key="education.ynov.dates">
-          2023 - 2027
-        </p>
-      </div>
+      <!-- Nouveau conteneur pour la grille -->
+      <div class="education-container">
+        <div class="education-item">
+          <h3 class="translate" data-key="education.ynov.school">
+            Ynov Campus
+          </h3>
+          <p
+            class="education-degree translate"
+            data-key="education.ynov.degree"
+          >
+            Bachelor - Informatique
+          </p>
+          <p class="education-dates translate" data-key="education.ynov.dates">
+            2023 - 2027
+          </p>
+        </div>
 
-      <div class="education-item">
-        <h3 class="translate" data-key="education.mediaschool.school">
-          MediaSchool - SupDeWeb
-        </h3>
-        <p
-          class="education-degree translate"
-          data-key="education.mediaschool.degree"
-        >
-          Bachelor - Développement Web
-        </p>
-        <p
-          class="education-dates translate"
-          data-key="education.mediaschool.dates"
-        >
-          2022 - 2023
-        </p>
-      </div>
+        <div class="education-item">
+          <h3 class="translate" data-key="education.mediaschool.school">
+            MediaSchool - SupDeWeb
+          </h3>
+          <p
+            class="education-degree translate"
+            data-key="education.mediaschool.degree"
+          >
+            Bachelor - Développement Web
+          </p>
+          <p
+            class="education-dates translate"
+            data-key="education.mediaschool.dates"
+          >
+            2022 - 2023
+          </p>
+        </div>
 
-      <div class="education-item">
-        <h3 class="translate" data-key="education.epitech.school">Epitech</h3>
-        <p
-          class="education-degree translate"
-          data-key="education.epitech.degree"
-        >
-          Expert en management des Systèmes d’information
-        </p>
-        <p class="education-dates translate" data-key="education.epitech.dates">
-          2022 - 2022
-        </p>
-      </div>
+        <div class="education-item">
+          <h3 class="translate" data-key="education.epitech.school">Epitech</h3>
+          <p
+            class="education-degree translate"
+            data-key="education.epitech.degree"
+          >
+            Expert en management des Systèmes d’information
+          </p>
+          <p
+            class="education-dates translate"
+            data-key="education.epitech.dates"
+          >
+            2022 - 2022
+          </p>
+        </div>
 
-      <div class="education-item">
-        <h3 class="translate" data-key="education.lycee.school">
-          Lycée Louis Guilloux
-        </h3>
-        <p class="education-degree translate" data-key="education.lycee.degree">
-          Baccalauréat Professionnel Commerce<br />
-        </p>
-        <p class="education-dates translate" data-key="education.lycee.dates">
-          2019 - 2022
-        </p>
+        <div class="education-item">
+          <h3 class="translate" data-key="education.lycee.school">
+            Lycée Louis Guilloux
+          </h3>
+          <p
+            class="education-degree translate"
+            data-key="education.lycee.degree"
+          >
+            Baccalauréat Professionnel Commerce<br />
+          </p>
+          <p class="education-dates translate" data-key="education.lycee.dates">
+            2019 - 2022
+          </p>
+        </div>
       </div>
     </section>
 
@@ -673,11 +639,6 @@
         Contactez-moi
       </h2>
       <form id="contact-form">
-        <label for="name" class="translate" data-key="contact.form.name"
-          >Nom:</label
-        >
-        <input type="text" id="name" name="name" required />
-
         <label for="email" class="translate" data-key="contact.form.email"
           >Email:</label
         >
@@ -700,7 +661,6 @@
             e.preventDefault();
 
             const formData = {
-              name: document.getElementById("name").value,
               email: document.getElementById("email").value,
               message: document.getElementById("message").value,
             };
@@ -764,6 +724,14 @@
         />
       </svg>
     </button>
+    <script>
+      const textarea = document.getElementById("message");
+
+      textarea.addEventListener("input", function () {
+        this.style.height = "auto";
+        this.style.height = this.scrollHeight + "px";
+      });
+    </script>
     <script src="/scripts/scroll.js" defer></script>
     <script src="/scripts/traduction.js" defer></script>
     <script src="/scripts/menu.js" defer></script>

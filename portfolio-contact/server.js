@@ -37,14 +37,13 @@ const transporter = nodemailer.createTransport({
 
 // Route pour gérer l'envoi du formulaire de contact
 app.post("/send", (req, res) => {
-  const { name, email, message } = req.body;
+  const { email, message } = req.body;
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_USER,
     replyTo: email,
-    subject: `Nouveau message de ${name}`,
-    text: `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    text: `Email: ${email}\nMessage: ${message}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
