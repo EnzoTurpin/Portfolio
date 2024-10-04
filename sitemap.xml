@@ -45,6 +45,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!--Section CV-->
+  <url>
+    <loc>https://enzo-turpin.fr/#cv</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Section Contact -->
   <url>
     <loc>https://enzo-turpin.fr/#contact</loc>
